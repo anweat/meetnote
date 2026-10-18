@@ -1,0 +1,482 @@
+[
+  {
+    "name": "MetalMic1",
+    "label": "6061 metal front + middle frame / 1.5mm nominal",
+    "mesh": "meshes/MetalMic1.stl",
+    "material": "aluminum",
+    "status": "6061 candidate; tool access and tolerances not reviewed",
+    "group": "shell"
+  },
+  {
+    "name": "RearCompressionGasket",
+    "label": "RearCompressionGasket",
+    "mesh": "meshes/RearCompressionGasket.stl",
+    "material": "gasket",
+    "status": "compressed thickness 0.30mm target; stock 0.40mm candidate",
+    "group": "seal"
+  },
+  {
+    "name": "Boss0",
+    "label": "Boss0",
+    "mesh": "meshes/Boss0.stl",
+    "material": "aluminum",
+    "status": "M2 pilot/insert placeholder; threads not modeled",
+    "group": "fastener"
+  },
+  {
+    "name": "Screw0",
+    "label": "Screw0",
+    "mesh": "meshes/Screw0.stl",
+    "material": "steel",
+    "status": "M2 geometric placeholder",
+    "group": "fastener"
+  },
+  {
+    "name": "Boss1",
+    "label": "Boss1",
+    "mesh": "meshes/Boss1.stl",
+    "material": "aluminum",
+    "status": "M2 pilot/insert placeholder; threads not modeled",
+    "group": "fastener"
+  },
+  {
+    "name": "Screw1",
+    "label": "Screw1",
+    "mesh": "meshes/Screw1.stl",
+    "material": "steel",
+    "status": "M2 geometric placeholder",
+    "group": "fastener"
+  },
+  {
+    "name": "Boss2",
+    "label": "Boss2",
+    "mesh": "meshes/Boss2.stl",
+    "material": "polymer",
+    "status": "M2 pilot/insert placeholder; threads not modeled",
+    "group": "fastener"
+  },
+  {
+    "name": "Screw2",
+    "label": "Screw2",
+    "mesh": "meshes/Screw2.stl",
+    "material": "steel",
+    "status": "M2 geometric placeholder",
+    "group": "fastener"
+  },
+  {
+    "name": "Boss3",
+    "label": "Boss3",
+    "mesh": "meshes/Boss3.stl",
+    "material": "polymer",
+    "status": "M2 pilot/insert placeholder; threads not modeled",
+    "group": "fastener"
+  },
+  {
+    "name": "Screw3",
+    "label": "Screw3",
+    "mesh": "meshes/Screw3.stl",
+    "material": "steel",
+    "status": "M2 geometric placeholder",
+    "group": "fastener"
+  },
+  {
+    "name": "RearHeadPocket3",
+    "label": "RearHeadPocket3",
+    "mesh": "meshes/RearHeadPocket3.stl",
+    "material": "polymer",
+    "status": "removable backplate; recessed screw heads",
+    "group": "shell"
+  },
+  {
+    "name": "RFCapWithStrapLugs",
+    "label": "RFCapWithStrapLugs",
+    "mesh": "meshes/RFCapWithStrapLugs.stl",
+    "material": "polymer",
+    "status": "integrated lugs; pull force and cap retention OPEN",
+    "group": "shell"
+  },
+  {
+    "name": "TopCapBond",
+    "label": "TopCapBond",
+    "mesh": "meshes/TopCapBond.stl",
+    "material": "adhesive",
+    "status": "0.20mm adhesive gap; perimeter continuity and fixture unresolved",
+    "group": "seal"
+  },
+  {
+    "name": "PCBPost0",
+    "label": "PCBPost0",
+    "mesh": "meshes/PCBPost0.stl",
+    "material": "polymer",
+    "status": "spacer envelope; attachment and preload OPEN",
+    "group": "fastener"
+  },
+  {
+    "name": "PCBPost1",
+    "label": "PCBPost1",
+    "mesh": "meshes/PCBPost1.stl",
+    "material": "polymer",
+    "status": "spacer envelope; attachment and preload OPEN",
+    "group": "fastener"
+  },
+  {
+    "name": "PCBPost2",
+    "label": "PCBPost2",
+    "mesh": "meshes/PCBPost2.stl",
+    "material": "polymer",
+    "status": "spacer envelope; attachment and preload OPEN",
+    "group": "fastener"
+  },
+  {
+    "name": "PCBPost3",
+    "label": "PCBPost3",
+    "mesh": "meshes/PCBPost3.stl",
+    "material": "polymer",
+    "status": "spacer envelope; attachment and preload OPEN",
+    "group": "fastener"
+  },
+  {
+    "name": "CarrierHole3",
+    "label": "CarrierHole3",
+    "mesh": "meshes/CarrierHole3.stl",
+    "material": "pcb",
+    "status": "proposed board shape only; NOT imported KiCad / no netlist",
+    "group": "pcb"
+  },
+  {
+    "name": "BatteryEnvelope",
+    "label": "BatteryEnvelope",
+    "mesh": "meshes/BatteryEnvelope.stl",
+    "material": "battery",
+    "status": "verified XY where stated; maximum envelope; exact connectors pending",
+    "group": "internal"
+  },
+  {
+    "name": "ComputeZero2WEnvelope",
+    "label": "ComputeZero2WEnvelope",
+    "mesh": "meshes/ComputeZero2WEnvelope.stl",
+    "material": "pcb",
+    "status": "verified XY where stated; maximum envelope; exact connectors pending",
+    "group": "internal"
+  },
+  {
+    "name": "CameraModuleEnvelope",
+    "label": "CameraModuleEnvelope",
+    "mesh": "meshes/CameraModuleEnvelope.stl",
+    "material": "chip",
+    "status": "verified XY where stated; maximum envelope; exact connectors pending",
+    "group": "internal"
+  },
+  {
+    "name": "DisplayModuleEnvelope",
+    "label": "DisplayModuleEnvelope",
+    "mesh": "meshes/DisplayModuleEnvelope.stl",
+    "material": "screen",
+    "status": "verified XY where stated; maximum envelope; exact connectors pending",
+    "group": "internal"
+  },
+  {
+    "name": "DisplayCoverGlass",
+    "label": "DisplayCoverGlass",
+    "mesh": "meshes/DisplayCoverGlass.stl",
+    "material": "glass",
+    "status": "cover glass placeholder; rear z=.25..95mm",
+    "group": "glass"
+  },
+  {
+    "name": "DisplayPerimeterTape",
+    "label": "DisplayPerimeterTape",
+    "mesh": "meshes/DisplayPerimeterTape.stl",
+    "material": "adhesive",
+    "status": "perimeter tape; custom die cut, not full optical bonding",
+    "group": "seal"
+  },
+  {
+    "name": "CameraCoverGlass",
+    "label": "CameraCoverGlass",
+    "mesh": "meshes/CameraCoverGlass.stl",
+    "material": "glass",
+    "status": "optical window material/AR coating pending",
+    "group": "glass"
+  },
+  {
+    "name": "CameraBondRing",
+    "label": "CameraBondRing",
+    "mesh": "meshes/CameraBondRing.stl",
+    "material": "adhesive",
+    "status": "window bond ring; needs supporting ledge",
+    "group": "seal"
+  },
+  {
+    "name": "GNSS_LC76G",
+    "label": "GNSS_LC76G",
+    "mesh": "meshes/GNSS_LC76G.stl",
+    "material": "chip",
+    "status": "LC76G module envelope; selected variant and footprint not frozen",
+    "group": "internal"
+  },
+  {
+    "name": "GNSSGroundBoard",
+    "label": "GNSSGroundBoard",
+    "mesh": "meshes/GNSSGroundBoard.stl",
+    "material": "pcb",
+    "status": "antenna ground reference placeholder; actual required dimensions unknown",
+    "group": "internal"
+  },
+  {
+    "name": "GNSSPatchReservation",
+    "label": "GNSSPatchReservation",
+    "mesh": "meshes/GNSSPatchReservation.stl",
+    "material": "ceramic",
+    "status": "UNSELECTED antenna reservation; matching and ground plane not verified",
+    "group": "internal"
+  },
+  {
+    "name": "FPGA_iCE40UP5K",
+    "label": "FPGA_iCE40UP5K",
+    "mesh": "meshes/FPGA_iCE40UP5K.stl",
+    "material": "chip",
+    "status": "QFN48 body envelope; support parts reserved separately",
+    "group": "internal"
+  },
+  {
+    "name": "IMU_BMI270",
+    "label": "IMU_BMI270",
+    "mesh": "meshes/IMU_BMI270.stl",
+    "material": "chip",
+    "status": "14-LGA vendor dimensions; interrupts and axis orientation pending",
+    "group": "internal"
+  },
+  {
+    "name": "PowerPathReserved",
+    "label": "PowerPathReserved",
+    "mesh": "meshes/PowerPathReserved.stl",
+    "material": "chip",
+    "status": "UNSELECTED charger/boost/protection group",
+    "group": "internal"
+  },
+  {
+    "name": "AlwaysOnControllerReserved",
+    "label": "AlwaysOnControllerReserved",
+    "mesh": "meshes/AlwaysOnControllerReserved.stl",
+    "material": "chip",
+    "status": "UNSELECTED wake/NTC/rail-control device",
+    "group": "internal"
+  },
+  {
+    "name": "FuelGaugeReserved",
+    "label": "FuelGaugeReserved",
+    "mesh": "meshes/FuelGaugeReserved.stl",
+    "material": "chip",
+    "status": "UNSELECTED gauge with I2C",
+    "group": "internal"
+  },
+  {
+    "name": "ClockConfigReserved",
+    "label": "ClockConfigReserved",
+    "mesh": "meshes/ClockConfigReserved.stl",
+    "material": "chip",
+    "status": "FPGA oscillator/configuration envelope",
+    "group": "internal"
+  },
+  {
+    "name": "SpeakerEnclosure",
+    "label": "SpeakerEnclosure",
+    "mesh": "meshes/SpeakerEnclosure.stl",
+    "material": "polymer",
+    "status": "UNSELECTED speaker plus acoustic chamber",
+    "group": "internal"
+  },
+  {
+    "name": "USBChargeConnector",
+    "label": "USBChargeConnector",
+    "mesh": "meshes/USBChargeConnector.stl",
+    "material": "steel",
+    "status": "UNSELECTED actual port/support board; grommet pending",
+    "group": "internal"
+  },
+  {
+    "name": "ScreenFPCVertical",
+    "label": "ScreenFPCVertical",
+    "mesh": "meshes/ScreenFPCVertical.stl",
+    "material": "fpc",
+    "status": "routing corridor only; no bend radius proof",
+    "group": "internal"
+  },
+  {
+    "name": "ScreenFPCFlat",
+    "label": "ScreenFPCFlat",
+    "mesh": "meshes/ScreenFPCFlat.stl",
+    "material": "fpc",
+    "status": "routing corridor only",
+    "group": "internal"
+  },
+  {
+    "name": "CameraFPCCorridor",
+    "label": "CameraFPCCorridor",
+    "mesh": "meshes/CameraFPCCorridor.stl",
+    "material": "fpc",
+    "status": "routing corridor only; endpoints not connected",
+    "group": "internal"
+  },
+  {
+    "name": "ThermalBridge",
+    "label": "ThermalBridge",
+    "mesh": "meshes/ThermalBridge.stl",
+    "material": "aluminum",
+    "status": "rigid thermal bridge; intentional top contact",
+    "group": "internal"
+  },
+  {
+    "name": "ThermalPad",
+    "label": "ThermalPad",
+    "mesh": "meshes/ThermalPad.stl",
+    "material": "thermal",
+    "status": "compressed pad target; touches front inside surface",
+    "group": "internal"
+  },
+  {
+    "name": "HapticMotor",
+    "label": "HapticMotor",
+    "mesh": "meshes/HapticMotor.stl",
+    "material": "steel",
+    "status": "UNSELECTED ERM motor; mount isolation pending",
+    "group": "internal"
+  },
+  {
+    "name": "Mic0",
+    "label": "Mic0",
+    "mesh": "meshes/Mic0.stl",
+    "material": "chip",
+    "status": "PDM body placeholder; daughterboard and wiring OPEN",
+    "group": "internal"
+  },
+  {
+    "name": "MicGasket0",
+    "label": "MicGasket0",
+    "mesh": "meshes/MicGasket0.stl",
+    "material": "gasket",
+    "status": "acoustic isolation tube placeholder",
+    "group": "internal"
+  },
+  {
+    "name": "MicMembrane0",
+    "label": "MicMembrane0",
+    "mesh": "meshes/MicMembrane0.stl",
+    "material": "membrane",
+    "status": "UNSELECTED acoustic membrane; insertion loss/IP untested",
+    "group": "internal"
+  },
+  {
+    "name": "Mic1",
+    "label": "Mic1",
+    "mesh": "meshes/Mic1.stl",
+    "material": "chip",
+    "status": "PDM body placeholder; daughterboard and wiring OPEN",
+    "group": "internal"
+  },
+  {
+    "name": "MicGasket1",
+    "label": "MicGasket1",
+    "mesh": "meshes/MicGasket1.stl",
+    "material": "gasket",
+    "status": "acoustic isolation tube placeholder",
+    "group": "internal"
+  },
+  {
+    "name": "MicMembrane1",
+    "label": "MicMembrane1",
+    "mesh": "meshes/MicMembrane1.stl",
+    "material": "membrane",
+    "status": "UNSELECTED acoustic membrane; insertion loss/IP untested",
+    "group": "internal"
+  },
+  {
+    "name": "Mic2",
+    "label": "Mic2",
+    "mesh": "meshes/Mic2.stl",
+    "material": "chip",
+    "status": "PDM body placeholder; daughterboard and wiring OPEN",
+    "group": "internal"
+  },
+  {
+    "name": "MicGasket2",
+    "label": "MicGasket2",
+    "mesh": "meshes/MicGasket2.stl",
+    "material": "gasket",
+    "status": "acoustic isolation tube placeholder",
+    "group": "internal"
+  },
+  {
+    "name": "MicMembrane2",
+    "label": "MicMembrane2",
+    "mesh": "meshes/MicMembrane2.stl",
+    "material": "membrane",
+    "status": "UNSELECTED acoustic membrane; insertion loss/IP untested",
+    "group": "internal"
+  },
+  {
+    "name": "Mic3",
+    "label": "Mic3",
+    "mesh": "meshes/Mic3.stl",
+    "material": "chip",
+    "status": "PDM body placeholder; daughterboard and wiring OPEN",
+    "group": "internal"
+  },
+  {
+    "name": "MicGasket3",
+    "label": "MicGasket3",
+    "mesh": "meshes/MicGasket3.stl",
+    "material": "gasket",
+    "status": "acoustic isolation tube placeholder",
+    "group": "internal"
+  },
+  {
+    "name": "MicMembrane3",
+    "label": "MicMembrane3",
+    "mesh": "meshes/MicMembrane3.stl",
+    "material": "membrane",
+    "status": "UNSELECTED acoustic membrane; insertion loss/IP untested",
+    "group": "internal"
+  },
+  {
+    "name": "LightPipe0",
+    "label": "LightPipe0",
+    "mesh": "meshes/LightPipe0.stl",
+    "material": "red",
+    "status": "separate microphone/camera status lightpipe",
+    "group": "external"
+  },
+  {
+    "name": "LightPipe1",
+    "label": "LightPipe1",
+    "mesh": "meshes/LightPipe1.stl",
+    "material": "amber",
+    "status": "separate microphone/camera status lightpipe",
+    "group": "external"
+  },
+  {
+    "name": "SideButton0",
+    "label": "SideButton0",
+    "mesh": "meshes/SideButton0.stl",
+    "material": "polymer",
+    "status": "button cap; switch travel and seal OPEN",
+    "group": "external"
+  },
+  {
+    "name": "SideButton1",
+    "label": "SideButton1",
+    "mesh": "meshes/SideButton1.stl",
+    "material": "polymer",
+    "status": "button cap; switch travel and seal OPEN",
+    "group": "external"
+  },
+  {
+    "name": "PrivacySlider",
+    "label": "PrivacySlider",
+    "mesh": "meshes/PrivacySlider.stl",
+    "material": "red",
+    "status": "physical permission switch actuator; internal switch not selected",
+    "group": "external"
+  }
+]

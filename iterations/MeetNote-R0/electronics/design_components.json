@@ -1,0 +1,910 @@
+[
+  {
+    "sheet": "power",
+    "key": "UNVERIFIED_POWER_ASSEMBLY",
+    "ref": "U10",
+    "value": "UNVERIFIED BQ24074 + boost + rails + gating",
+    "x": 90,
+    "y": 80,
+    "nets": {
+      "1": "VBUS_5V",
+      "2": "BAT_P",
+      "3": "NTC_CELL",
+      "4": "GND",
+      "5": "SYS_5V",
+      "6": "V3V3",
+      "7": "V1V2",
+      "8": "V2V5",
+      "9": "MIC_CAPTURE_VDD",
+      "10": "REC_PERMIT",
+      "11": "CAM_PERMIT",
+      "12": "LOW_BAT"
+    },
+    "fp": "",
+    "pos": null,
+    "unit": 1,
+    "uuid": "c79ded86-b979-4ca0-85bc-f90b102bc023",
+    "note": "BLOCKER: power design, USB-C CC detection, thermistor and hard gates not implemented"
+  },
+  {
+    "sheet": "power",
+    "key": "Conn_01x02",
+    "ref": "J2",
+    "value": "BATTERY 1S",
+    "x": 160,
+    "y": 50,
+    "nets": {
+      "1": "BAT_P",
+      "2": "GND"
+    },
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pos": [
+      58,
+      15
+    ],
+    "unit": 1,
+    "uuid": "3e94a88f-5c3e-4897-9f3b-969e4ac5ce70",
+    "note": "Provisional 2.54mm engineering header; NOT approved battery connector"
+  },
+  {
+    "sheet": "power",
+    "key": "Conn_01x02",
+    "ref": "J3",
+    "value": "REGULATED 5V IN",
+    "x": 160,
+    "y": 80,
+    "nets": {
+      "1": "SYS_5V",
+      "2": "GND"
+    },
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pos": [
+      58,
+      24
+    ],
+    "unit": 1,
+    "uuid": "b611db68-7244-450a-adac-8993efd6efc6",
+    "note": "Provisional 2.54mm engineering header; NOT approved battery connector"
+  },
+  {
+    "sheet": "power",
+    "key": "Conn_01x02",
+    "ref": "J4",
+    "value": "CELL NTC",
+    "x": 160,
+    "y": 110,
+    "nets": {
+      "1": "NTC_CELL",
+      "2": "GND"
+    },
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pos": [
+      50,
+      10
+    ],
+    "unit": 1,
+    "uuid": "6e45ffdc-8d7c-445e-927d-1c26b461d691",
+    "note": "Provisional 2.54mm engineering header; NOT approved battery connector"
+  },
+  {
+    "sheet": "compute",
+    "key": "Conn_02x20_Odd_Even",
+    "ref": "J1",
+    "value": "Zero 2 W GPIO via short harness",
+    "x": 95,
+    "y": 90,
+    "nets": {
+      "1": "V3V3",
+      "2": "SYS_5V",
+      "3": "I2C_SDA",
+      "4": "SYS_5V",
+      "5": "I2C_SCL",
+      "6": "GND",
+      "7": "FPGA_IRQ",
+      "8": "UART_TX",
+      "9": "GND",
+      "10": "UART_RX",
+      "11": "REC_BUTTON",
+      "12": "FPGA_RESET",
+      "13": "CAM_BUTTON",
+      "14": "GND",
+      "15": "ZOOM_PLUS",
+      "16": "ZOOM_MINUS",
+      "17": "V3V3",
+      "18": "UPLOAD_LED_CTL",
+      "19": "SPI_MOSI",
+      "20": "GND",
+      "21": "SPI_MISO",
+      "22": "FPGA_DONE",
+      "23": "SPI_SCK",
+      "24": "SPI_CS",
+      "25": "GND",
+      "26": "CAM_PERMIT",
+      "27": null,
+      "28": null,
+      "29": "REC_PERMIT",
+      "30": "GND",
+      "31": "LOW_BAT",
+      "32": "ERROR_LED_CTL",
+      "33": null,
+      "34": "GND",
+      "35": null,
+      "36": null,
+      "37": null,
+      "38": null,
+      "39": "GND",
+      "40": null
+    },
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical",
+    "pos": [
+      15,
+      10
+    ],
+    "unit": 1,
+    "uuid": "4bf8c121-066b-4b66-b15a-08ad4db09445",
+    "note": "GPIO physical numbering; harness length and final connector height TBD; not direct stacked HAT"
+  },
+  {
+    "sheet": "fpga",
+    "key": "ICE40UP5K-SG48ITR",
+    "ref": "U1",
+    "value": "ICE40UP5K-SG48ITR",
+    "x": 65,
+    "y": 75,
+    "nets": {
+      "1": "V3V3",
+      "5": "V1V2",
+      "30": "V1V2",
+      "29": "V1V2_PLL",
+      "24": "V2V5",
+      "22": "V3V3",
+      "33": "V3V3",
+      "49": "GND",
+      "7": "FPGA_DONE",
+      "8": "FPGA_RESET",
+      "14": "SPI_MISO",
+      "15": "SPI_SCK",
+      "16": "SPI_CS",
+      "17": "SPI_MOSI",
+      "23": "PDM_D1",
+      "25": "PDM_D2",
+      "26": "PDM_D3",
+      "27": "PDM_D4",
+      "28": "PDM_CLK",
+      "31": "FPGA_IRQ",
+      "35": "AUDIO_MCLK"
+    },
+    "fp": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+    "pos": [
+      34,
+      22
+    ],
+    "unit": 1,
+    "uuid": "e9bc80c9-2128-4596-9f2a-08754dedfd09",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "ICE40UP5K-SG48ITR",
+    "ref": "U1",
+    "value": "ICE40UP5K-SG48ITR",
+    "x": 150,
+    "y": 75,
+    "nets": {
+      "1": "V3V3",
+      "5": "V1V2",
+      "30": "V1V2",
+      "29": "V1V2_PLL",
+      "24": "V2V5",
+      "22": "V3V3",
+      "33": "V3V3",
+      "49": "GND",
+      "7": "FPGA_DONE",
+      "8": "FPGA_RESET",
+      "14": "SPI_MISO",
+      "15": "SPI_SCK",
+      "16": "SPI_CS",
+      "17": "SPI_MOSI",
+      "23": "PDM_D1",
+      "25": "PDM_D2",
+      "26": "PDM_D3",
+      "27": "PDM_D4",
+      "28": "PDM_CLK",
+      "31": "FPGA_IRQ",
+      "35": "AUDIO_MCLK"
+    },
+    "fp": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+    "pos": [
+      34,
+      22
+    ],
+    "unit": 2,
+    "uuid": "7eea0eed-bbe3-4401-81bb-35f9e78e90e0",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "ICE40UP5K-SG48ITR",
+    "ref": "U1",
+    "value": "ICE40UP5K-SG48ITR",
+    "x": 65,
+    "y": 160,
+    "nets": {
+      "1": "V3V3",
+      "5": "V1V2",
+      "30": "V1V2",
+      "29": "V1V2_PLL",
+      "24": "V2V5",
+      "22": "V3V3",
+      "33": "V3V3",
+      "49": "GND",
+      "7": "FPGA_DONE",
+      "8": "FPGA_RESET",
+      "14": "SPI_MISO",
+      "15": "SPI_SCK",
+      "16": "SPI_CS",
+      "17": "SPI_MOSI",
+      "23": "PDM_D1",
+      "25": "PDM_D2",
+      "26": "PDM_D3",
+      "27": "PDM_D4",
+      "28": "PDM_CLK",
+      "31": "FPGA_IRQ",
+      "35": "AUDIO_MCLK"
+    },
+    "fp": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+    "pos": [
+      34,
+      22
+    ],
+    "unit": 3,
+    "uuid": "c73b9a62-6950-40c6-98e4-a1e4851a6177",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "ICE40UP5K-SG48ITR",
+    "ref": "U1",
+    "value": "ICE40UP5K-SG48ITR",
+    "x": 150,
+    "y": 160,
+    "nets": {
+      "1": "V3V3",
+      "5": "V1V2",
+      "30": "V1V2",
+      "29": "V1V2_PLL",
+      "24": "V2V5",
+      "22": "V3V3",
+      "33": "V3V3",
+      "49": "GND",
+      "7": "FPGA_DONE",
+      "8": "FPGA_RESET",
+      "14": "SPI_MISO",
+      "15": "SPI_SCK",
+      "16": "SPI_CS",
+      "17": "SPI_MOSI",
+      "23": "PDM_D1",
+      "25": "PDM_D2",
+      "26": "PDM_D3",
+      "27": "PDM_D4",
+      "28": "PDM_CLK",
+      "31": "FPGA_IRQ",
+      "35": "AUDIO_MCLK"
+    },
+    "fp": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+    "pos": [
+      34,
+      22
+    ],
+    "unit": 4,
+    "uuid": "92678e41-968e-4b6b-a2b9-c41993f8f5c5",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "UNVERIFIED_12M288_XO",
+    "ref": "Y1",
+    "value": "UNVERIFIED 12.288MHz XO",
+    "x": 235,
+    "y": 65,
+    "nets": {
+      "1": "V3V3",
+      "2": "GND",
+      "3": "AUDIO_MCLK"
+    },
+    "fp": "",
+    "pos": null,
+    "unit": 1,
+    "uuid": "83192798-ceb2-493f-ae55-8c5b8222e6e7",
+    "note": "BLOCKER: order code, jitter, supply and footprint not verified"
+  },
+  {
+    "sheet": "fpga",
+    "key": "R",
+    "ref": "R1",
+    "value": "100R PLL filter provisional",
+    "x": 225,
+    "y": 115,
+    "nets": {
+      "1": "V1V2",
+      "2": "V1V2_PLL"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      40,
+      18
+    ],
+    "unit": 1,
+    "uuid": "64a785bd-f4f8-4cb3-98a9-fbd32150a1f5",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "C",
+    "ref": "C1",
+    "value": "100nF 10V",
+    "x": 210,
+    "y": 155,
+    "nets": {
+      "1": "V1V2",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      27,
+      30
+    ],
+    "unit": 1,
+    "uuid": "507e2afb-8c2e-4864-bb95-7aa007e8c62d",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "C",
+    "ref": "C2",
+    "value": "100nF 10V",
+    "x": 228,
+    "y": 155,
+    "nets": {
+      "1": "V1V2_PLL",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      32,
+      30
+    ],
+    "unit": 1,
+    "uuid": "c54cfb44-f2cb-4e51-b851-3ab7144b7ce3",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "C",
+    "ref": "C3",
+    "value": "100nF 10V",
+    "x": 246,
+    "y": 155,
+    "nets": {
+      "1": "V2V5",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      37,
+      30
+    ],
+    "unit": 1,
+    "uuid": "4fb86e83-0652-42e8-88f2-f46323e47157",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "C",
+    "ref": "C4",
+    "value": "100nF 10V",
+    "x": 264,
+    "y": 155,
+    "nets": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      42,
+      30
+    ],
+    "unit": 1,
+    "uuid": "11dcf7ea-559a-457e-98c3-4fe1f8685ce9",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "R",
+    "ref": "R2",
+    "value": "10k",
+    "x": 215,
+    "y": 95,
+    "nets": {
+      "1": "V3V3",
+      "2": "FPGA_RESET"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      28,
+      16
+    ],
+    "unit": 1,
+    "uuid": "a2519b9b-4724-403e-b5ad-8d92404e05cc",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "fpga",
+    "key": "R",
+    "ref": "R3",
+    "value": "10k",
+    "x": 240,
+    "y": 95,
+    "nets": {
+      "1": "V3V3",
+      "2": "FPGA_DONE"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      35,
+      16
+    ],
+    "unit": 1,
+    "uuid": "68b756b1-0772-4189-9f24-e0ac8026b6f7",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "IM69D130",
+    "ref": "MK1",
+    "value": "IM69D130",
+    "x": 65,
+    "y": 65,
+    "nets": {
+      "1": "PDM_D1",
+      "2": "MIC_CAPTURE_VDD",
+      "3": "PDM_CLK",
+      "4": "GND",
+      "5": "GND"
+    },
+    "fp": "Sensor_Audio:Infineon_PG-LLGA-5-1",
+    "pos": [
+      4,
+      4
+    ],
+    "unit": 1,
+    "uuid": "f2ad1c2a-6fee-478f-82be-ea098d8a45af",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "C",
+    "ref": "C5",
+    "value": "100nF 10V",
+    "x": 100,
+    "y": 65,
+    "nets": {
+      "1": "MIC_CAPTURE_VDD",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      8,
+      4
+    ],
+    "unit": 1,
+    "uuid": "db97eb18-d59c-4201-98a4-292a4e82c197",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "IM69D130",
+    "ref": "MK2",
+    "value": "IM69D130",
+    "x": 160,
+    "y": 65,
+    "nets": {
+      "1": "PDM_D2",
+      "2": "MIC_CAPTURE_VDD",
+      "3": "PDM_CLK",
+      "4": "GND",
+      "5": "GND"
+    },
+    "fp": "Sensor_Audio:Infineon_PG-LLGA-5-1",
+    "pos": [
+      66,
+      4
+    ],
+    "unit": 1,
+    "uuid": "e4491c47-3f85-41d9-90db-fb550dec7b78",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "C",
+    "ref": "C6",
+    "value": "100nF 10V",
+    "x": 195,
+    "y": 65,
+    "nets": {
+      "1": "MIC_CAPTURE_VDD",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      62,
+      4
+    ],
+    "unit": 1,
+    "uuid": "59fd6113-14bd-45f2-a014-fa6868d91384",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "IM69D130",
+    "ref": "MK3",
+    "value": "IM69D130",
+    "x": 65,
+    "y": 135,
+    "nets": {
+      "1": "PDM_D3",
+      "2": "MIC_CAPTURE_VDD",
+      "3": "PDM_CLK",
+      "4": "GND",
+      "5": "GND"
+    },
+    "fp": "Sensor_Audio:Infineon_PG-LLGA-5-1",
+    "pos": [
+      4,
+      66
+    ],
+    "unit": 1,
+    "uuid": "28077273-ef53-4868-8214-0ca957e6a352",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "C",
+    "ref": "C7",
+    "value": "100nF 10V",
+    "x": 100,
+    "y": 135,
+    "nets": {
+      "1": "MIC_CAPTURE_VDD",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      8,
+      66
+    ],
+    "unit": 1,
+    "uuid": "9216162f-5b11-447c-bcaf-370bf2a0342e",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "IM69D130",
+    "ref": "MK4",
+    "value": "IM69D130",
+    "x": 160,
+    "y": 135,
+    "nets": {
+      "1": "PDM_D4",
+      "2": "MIC_CAPTURE_VDD",
+      "3": "PDM_CLK",
+      "4": "GND",
+      "5": "GND"
+    },
+    "fp": "Sensor_Audio:Infineon_PG-LLGA-5-1",
+    "pos": [
+      66,
+      66
+    ],
+    "unit": 1,
+    "uuid": "b9c82c08-82c2-4984-9b76-4b16d841564d",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "audio",
+    "key": "C",
+    "ref": "C8",
+    "value": "100nF 10V",
+    "x": 195,
+    "y": 135,
+    "nets": {
+      "1": "MIC_CAPTURE_VDD",
+      "2": "GND"
+    },
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "pos": [
+      62,
+      66
+    ],
+    "unit": 1,
+    "uuid": "465db215-a1a8-48d2-b74e-0c44b624b67d",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "camera",
+    "key": "EXTERNAL_CAMERA_CSI",
+    "ref": "A2",
+    "value": "Camera Module 3 Standard external FPC",
+    "x": 95,
+    "y": 70,
+    "nets": {
+      "1": "CSI_DIRECT_EXTERNAL",
+      "2": "CAM_I2C_EXTERNAL",
+      "3": "CAM_PERMIT",
+      "4": "CAM_HW_ON"
+    },
+    "fp": "",
+    "pos": null,
+    "unit": 1,
+    "uuid": "6c798f05-798f-4d3a-9797-330b0907aa8b",
+    "note": "External Zero CSI connection; not routed on carrier. Hard power isolation/interposer unresolved"
+  },
+  {
+    "sheet": "wireless",
+    "key": "EMBEDDED_WIFI_BLE",
+    "ref": "A3",
+    "value": "Zero 2 W onboard Wi-Fi BLE",
+    "x": 95,
+    "y": 70,
+    "nets": {
+      "1": "RADIO_INTERNAL"
+    },
+    "fp": "",
+    "pos": null,
+    "unit": 1,
+    "uuid": "b916e90c-2af2-4103-ad7c-dec563c801a4",
+    "note": "Already inside Zero; no second purchased module"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "SW_Push",
+    "ref": "SW1",
+    "value": "REC_BUTTON",
+    "x": 80,
+    "y": 60,
+    "nets": {
+      "1": "REC_BUTTON",
+      "2": "GND"
+    },
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "pos": [
+      25,
+      61
+    ],
+    "unit": 1,
+    "uuid": "ab225de7-1f23-4207-bce9-101654625244",
+    "note": "Switch MPN/force/travel not supplier-verified"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "SW_Push",
+    "ref": "SW2",
+    "value": "CAM_BUTTON",
+    "x": 120,
+    "y": 60,
+    "nets": {
+      "1": "CAM_BUTTON",
+      "2": "GND"
+    },
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "pos": [
+      36,
+      61
+    ],
+    "unit": 1,
+    "uuid": "bf2b2662-11be-4b9c-9c25-437e1a8a8464",
+    "note": "Switch MPN/force/travel not supplier-verified"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "SW_Push",
+    "ref": "SW3",
+    "value": "ZOOM_PLUS",
+    "x": 160,
+    "y": 60,
+    "nets": {
+      "1": "ZOOM_PLUS",
+      "2": "GND"
+    },
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "pos": [
+      47,
+      61
+    ],
+    "unit": 1,
+    "uuid": "ae234cc6-9210-40ca-9017-c4ac38cd5e84",
+    "note": "Switch MPN/force/travel not supplier-verified"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "SW_Push",
+    "ref": "SW4",
+    "value": "ZOOM_MINUS",
+    "x": 200,
+    "y": 60,
+    "nets": {
+      "1": "ZOOM_MINUS",
+      "2": "GND"
+    },
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "pos": [
+      58,
+      61
+    ],
+    "unit": 1,
+    "uuid": "7dec3de6-34c9-4a68-b158-691be84fbbac",
+    "note": "Switch MPN/force/travel not supplier-verified"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "LED",
+    "ref": "D1",
+    "value": "RED MIC POWER",
+    "x": 108,
+    "y": 112,
+    "nets": {
+      "1": "GND",
+      "2": "LED1_A"
+    },
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "pos": [
+      25,
+      44
+    ],
+    "unit": 1,
+    "uuid": "d890c042-4f4c-4401-ab96-d8d53e5290f9",
+    "note": "Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "R",
+    "ref": "R4",
+    "value": "1k provisional",
+    "x": 108,
+    "y": 92,
+    "nets": {
+      "1": "REC_HW_ON",
+      "2": "LED1_A"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      25,
+      40
+    ],
+    "unit": 1,
+    "uuid": "3a1581fc-688f-43cd-9093-0b473b835d37",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "LED",
+    "ref": "D2",
+    "value": "AMBER CAMERA POWER",
+    "x": 156,
+    "y": 112,
+    "nets": {
+      "1": "GND",
+      "2": "LED2_A"
+    },
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "pos": [
+      25,
+      52
+    ],
+    "unit": 1,
+    "uuid": "e2e69d8a-67ea-4e6b-a910-bce91682748f",
+    "note": "Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "R",
+    "ref": "R5",
+    "value": "1k provisional",
+    "x": 156,
+    "y": 92,
+    "nets": {
+      "1": "CAM_HW_ON",
+      "2": "LED2_A"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      25,
+      48
+    ],
+    "unit": 1,
+    "uuid": "d270a8e6-5e2c-459e-8734-e32869613b77",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "LED",
+    "ref": "D3",
+    "value": "BLUE UPLOAD",
+    "x": 204,
+    "y": 112,
+    "nets": {
+      "1": "GND",
+      "2": "LED3_A"
+    },
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "pos": [
+      25,
+      36
+    ],
+    "unit": 1,
+    "uuid": "41b5b338-8263-4c42-b8b8-5571dc497020",
+    "note": "Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "R",
+    "ref": "R6",
+    "value": "1k provisional",
+    "x": 204,
+    "y": 92,
+    "nets": {
+      "1": "UPLOAD_LED_CTL",
+      "2": "LED3_A"
+    },
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "pos": [
+      25,
+      32
+    ],
+    "unit": 1,
+    "uuid": "d6a74764-6a33-4c81-8b83-5e841d2bd7b0",
+    "note": "Library geometry; manufacturer pin review pending"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "UNVERIFIED_HARD_INTERLOCK",
+    "ref": "SW5",
+    "value": "UNVERIFIED dual-pole consent switch + gates",
+    "x": 65,
+    "y": 155,
+    "nets": {
+      "1": "V3V3",
+      "2": "GND",
+      "3": "REC_PERMIT",
+      "4": "CAM_PERMIT",
+      "5": "REC_HW_ON"
+    },
+    "fp": "",
+    "pos": null,
+    "unit": 1,
+    "uuid": "e965de8d-e190-4c5a-969a-80c570b17457",
+    "note": "BLOCKER: independent physical camera/microphone enable + anti-backfeed design incomplete"
+  },
+  {
+    "sheet": "ui_debug",
+    "key": "Conn_01x04",
+    "ref": "J5",
+    "value": "UART 3V3 debug",
+    "x": 160,
+    "y": 160,
+    "nets": {
+      "1": "GND",
+      "2": "UART_TX",
+      "3": "UART_RX",
+      "4": "V3V3"
+    },
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "pos": [
+      44,
+      14
+    ],
+    "unit": 1,
+    "uuid": "f7d27c40-c08b-4f8c-b615-03ae77519337",
+    "note": "Library geometry; manufacturer pin review pending"
+  }
+]

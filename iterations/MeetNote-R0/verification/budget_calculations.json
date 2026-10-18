@@ -1,0 +1,28 @@
+{
+  "evidence_level": "design calculation only, not measured",
+  "loads_W": {
+    "soc_ram": 1.35,
+    "wireless": 0.3,
+    "camera_duty": 0.1,
+    "fpga_clock_mics": 0.16,
+    "storage": 0.15,
+    "ui_rails": 0.1,
+    "margin": 0.29
+  },
+  "total_load_W": 2.45,
+  "usable_load_Wh": 5.8608,
+  "runtime_hours": 2.3921632653061224,
+  "two_hour_max_load_W": 2.9304,
+  "battery_peak_A_at_3V3_85pct": 2.1390374331550803,
+  "case_area_m2": 0.030952,
+  "case_rise_C_h6_h10": [
+    14.991443251329528,
+    8.994865950797715
+  ],
+  "debug_audio_2h_bytes": 1382400000,
+  "opus_2h_bytes": 28800000.0,
+  "photos_bytes": 480000000,
+  "debug_total_with_15pct_bytes": 2141759999.9999998,
+  "estimated_debug_meetings_20GB": 9,
+  "fpga_ring_theoretical_seconds": 0.6826666666666666
+}

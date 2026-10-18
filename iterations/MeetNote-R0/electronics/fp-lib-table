@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "MeetNote") (type "KiCad") (uri "${KIPRJMOD}/MeetNote.pretty") (options "") (descr "R0 copied standard footprints; unverified MPNs")))

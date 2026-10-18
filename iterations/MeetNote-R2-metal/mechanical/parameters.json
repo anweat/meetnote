@@ -1,0 +1,11 @@
+{
+ "revision":"R2-metal-study","units":"mm","width":76,"length":104,"height":34,"corner_radius":12,"wall":1.5,"rf_seam_y":72,
+ "battery":{"size":[50,60,7.3],"position":[20,15,6.8],"swelling_allowance":1.0},
+ "carrier":{"size":[68,70,1.6],"position":[4,10,16]},
+ "compute":{"size":[30,65,6],"position":[6,12,18],"status":"Zero2W rotated module maximum envelope; connector details and antenna end orientation OPEN"},
+ "camera":{"size":[25,24,11.5],"position":[43,43,19]},
+ "display":{"size":[31.5,39,4],"position":[22,30,2.1],"status":"XY vendor verified; thickness and connector placeholder"},
+ "gnss_patch":{"size":[18,18,4],"position":[46,81,27],"status":"UNSELECTED antenna reservation; matching and ground plane not verified"},
+ "sealing":"perimeter bonds and compression gasket; not full potting; no IP rating",
+ "manufacturing_release":false
+}

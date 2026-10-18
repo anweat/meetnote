@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_sch</source>
+    <date>2026-09-29T15:05:22</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>MeetNote R0 - Engineering draft</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>MeetNote.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/01 POWER - UNRESOLVED/" tstamps="/2a0d2075-548e-4c12-a24d-3c30824ec37c/">
+      <title_block>
+        <title>01 POWER - UNRESOLVED</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/02 COMPUTE AND STORAGE/" tstamps="/55568125-ece6-4585-882c-7328d0aaaf0b/">
+      <title_block>
+        <title>02 COMPUTE AND STORAGE</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>compute.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/">
+      <title_block>
+        <title>03 FPGA AUDIO FRONT END</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>fpga.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/04 CAMERA - EXTERNAL/" tstamps="/20ac713b-30b3-4c89-aa5a-fbef3e2042c8/">
+      <title_block>
+        <title>04 CAMERA - EXTERNAL</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>camera.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/">
+      <title_block>
+        <title>05 FOUR MICROPHONES</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>audio.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/06 WIRELESS - EMBEDDED/" tstamps="/44763fed-1979-4cbc-88e8-a3720f78679c/">
+      <title_block>
+        <title>06 WIRELESS - EMBEDDED</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>wireless.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/">
+      <title_block>
+        <title>07 UI AND DEBUG</title>
+        <company/>
+        <rev>R0-NOT-FOR-FAB</rev>
+        <date/>
+        <source>ui_debug.kicad_sch</source>
+        <comment number="1" value="UNROUTED DRAFT - ALL BLOCKERS MUST BE CLOSED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>BATTERY 1S</value>
+      <footprint>MeetNote:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Review">Provisional 2.54mm engineering header; NOT approved battery connector</field>
+        <field name="Footprint">MeetNote:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Review" value="Provisional 2.54mm engineering header; NOT approved battery connector"/>
+      <property name="Sheetname" value="01 POWER - UNRESOLVED"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/01 POWER - UNRESOLVED/" tstamps="/2a0d2075-548e-4c12-a24d-3c30824ec37c/"/>
+      <tstamps>3e94a88f-5c3e-4897-9f3b-969e4ac5ce70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>REGULATED 5V IN</value>
+      <footprint>MeetNote:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Review">Provisional 2.54mm engineering header; NOT approved battery connector</field>
+        <field name="Footprint">MeetNote:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Review" value="Provisional 2.54mm engineering header; NOT approved battery connector"/>
+      <property name="Sheetname" value="01 POWER - UNRESOLVED"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/01 POWER - UNRESOLVED/" tstamps="/2a0d2075-548e-4c12-a24d-3c30824ec37c/"/>
+      <tstamps>b611db68-7244-450a-adac-8993efd6efc6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>CELL NTC</value>
+      <footprint>MeetNote:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Review">Provisional 2.54mm engineering header; NOT approved battery connector</field>
+        <field name="Footprint">MeetNote:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Review" value="Provisional 2.54mm engineering header; NOT approved battery connector"/>
+      <property name="Sheetname" value="01 POWER - UNRESOLVED"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/01 POWER - UNRESOLVED/" tstamps="/2a0d2075-548e-4c12-a24d-3c30824ec37c/"/>
+      <tstamps>6e45ffdc-8d7c-445e-927d-1c26b461d691</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>UNVERIFIED BQ24074 + boost + rails + gating</value>
+      <fields>
+        <field name="Review">BLOCKER: power design, USB-C CC detection, thermistor and hard gates not implemented</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="UNVERIFIED_POWER_ASSEMBLY" description=""/>
+      <property name="Review" value="BLOCKER: power design, USB-C CC detection, thermistor and hard gates not implemented"/>
+      <property name="Sheetname" value="01 POWER - UNRESOLVED"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/01 POWER - UNRESOLVED/" tstamps="/2a0d2075-548e-4c12-a24d-3c30824ec37c/"/>
+      <tstamps>c79ded86-b979-4ca0-85bc-f90b102bc023</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>Zero 2 W GPIO via short harness</value>
+      <footprint>MeetNote:PinHeader_2x20_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Review">GPIO physical numbering; harness length and final connector height TBD; not direct stacked HAT</field>
+        <field name="Footprint">MeetNote:PinHeader_2x20_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="Conn_02x20_Odd_Even" description="Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Review" value="GPIO physical numbering; harness length and final connector height TBD; not direct stacked HAT"/>
+      <property name="Sheetname" value="02 COMPUTE AND STORAGE"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
+      <sheetpath names="/02 COMPUTE AND STORAGE/" tstamps="/55568125-ece6-4585-882c-7328d0aaaf0b/"/>
+      <tstamps>4bf8c121-066b-4b66-b15a-08ad4db09445</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="19"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="25"/>
+            <pin num="27"/>
+            <pin num="29"/>
+            <pin num="31"/>
+            <pin num="33"/>
+            <pin num="35"/>
+            <pin num="37"/>
+            <pin num="39"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="14"/>
+            <pin num="16"/>
+            <pin num="18"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="24"/>
+            <pin num="26"/>
+            <pin num="28"/>
+            <pin num="30"/>
+            <pin num="32"/>
+            <pin num="34"/>
+            <pin num="36"/>
+            <pin num="38"/>
+            <pin num="40"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>507e2afb-8c2e-4864-bb95-7aa007e8c62d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>c54cfb44-f2cb-4e51-b851-3ab7144b7ce3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>4fb86e83-0652-42e8-88f2-f46323e47157</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>11dcf7ea-559a-457e-98c3-4fe1f8685ce9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>100R PLL filter provisional</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>64a785bd-f4f8-4cb3-98a9-fbd32150a1f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>a2519b9b-4724-403e-b5ad-8d92404e05cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>68b756b1-0772-4189-9f24-e0ac8026b6f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ICE40UP5K-SG48ITR</value>
+      <footprint>MeetNote:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="ICE40UP5K-SG48ITR" description="iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="ki_keywords" value="FPGA programmable logic"/>
+      <property name="ki_fp_filters" value="QFN*1EP*7x7mm*P0.5mm*"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>e9bc80c9-2128-4596-9f2a-08754dedfd09 c73b9a62-6950-40c6-98e4-a1e4851a6177 92678e41-968e-4b6b-a2b9-c41993f8f5c5 7eea0eed-bbe3-4401-81bb-35f9e78e90e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="25"/>
+            <pin num="23"/>
+            <pin num="27"/>
+            <pin num="26"/>
+            <pin num="28"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="34"/>
+            <pin num="37"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="43"/>
+            <pin num="38"/>
+            <pin num="42"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+        <unit name="B">
+          <pins>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="21"/>
+            <pin num="13"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="14"/>
+            <pin num="17"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="22"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+        <unit name="C">
+          <pins>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="44"/>
+            <pin num="48"/>
+            <pin num="45"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+        <unit name="D">
+          <pins>
+            <pin num="24"/>
+            <pin num="5"/>
+            <pin num="30"/>
+            <pin num="49"/>
+            <pin num="29"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>UNVERIFIED 12.288MHz XO</value>
+      <fields>
+        <field name="Review">BLOCKER: order code, jitter, supply and footprint not verified</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="UNVERIFIED_12M288_XO" description=""/>
+      <property name="Review" value="BLOCKER: order code, jitter, supply and footprint not verified"/>
+      <property name="Sheetname" value="03 FPGA AUDIO FRONT END"/>
+      <property name="Sheetfile" value="fpga.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/03 FPGA AUDIO FRONT END/" tstamps="/997bd64c-5c6f-43d3-9bd6-84c512041bd1/"/>
+      <tstamps>83192798-ceb2-493f-ae55-8c5b8222e6e7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="A2">
+      <value>Camera Module 3 Standard external FPC</value>
+      <fields>
+        <field name="Review">External Zero CSI connection; not routed on carrier. Hard power isolation/interposer unresolved</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="EXTERNAL_CAMERA_CSI" description=""/>
+      <property name="Review" value="External Zero CSI connection; not routed on carrier. Hard power isolation/interposer unresolved"/>
+      <property name="Sheetname" value="04 CAMERA - EXTERNAL"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/04 CAMERA - EXTERNAL/" tstamps="/20ac713b-30b3-4c89-aa5a-fbef3e2042c8/"/>
+      <tstamps>6c798f05-798f-4d3a-9797-330b0907aa8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>db97eb18-d59c-4201-98a4-292a4e82c197</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>59fd6113-14bd-45f2-a014-fa6868d91384</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>9216162f-5b11-447c-bcaf-370bf2a0342e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF 10V</value>
+      <footprint>MeetNote:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="C" description="Unpolarized capacitor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>465db215-a1a8-48d2-b74e-0c44b624b67d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MK1">
+      <value>IM69D130</value>
+      <footprint>MeetNote:Infineon_PG-LLGA-5-1</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:Infineon_PG-LLGA-5-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="IM69D130" description="High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="mems microphone"/>
+      <property name="ki_fp_filters" value="Infineon*PG*LLGA*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>f2ad1c2a-6fee-478f-82be-ea098d8a45af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MK2">
+      <value>IM69D130</value>
+      <footprint>MeetNote:Infineon_PG-LLGA-5-1</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:Infineon_PG-LLGA-5-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="IM69D130" description="High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="mems microphone"/>
+      <property name="ki_fp_filters" value="Infineon*PG*LLGA*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>e4491c47-3f85-41d9-90db-fb550dec7b78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MK3">
+      <value>IM69D130</value>
+      <footprint>MeetNote:Infineon_PG-LLGA-5-1</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:Infineon_PG-LLGA-5-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="IM69D130" description="High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="mems microphone"/>
+      <property name="ki_fp_filters" value="Infineon*PG*LLGA*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>28077273-ef53-4868-8214-0ca957e6a352</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MK4">
+      <value>IM69D130</value>
+      <footprint>MeetNote:Infineon_PG-LLGA-5-1</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:Infineon_PG-LLGA-5-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="IM69D130" description="High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="05 FOUR MICROPHONES"/>
+      <property name="Sheetfile" value="audio.kicad_sch"/>
+      <property name="ki_keywords" value="mems microphone"/>
+      <property name="ki_fp_filters" value="Infineon*PG*LLGA*"/>
+      <sheetpath names="/05 FOUR MICROPHONES/" tstamps="/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145/"/>
+      <tstamps>b9c82c08-82c2-4984-9b76-4b16d841564d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="A3">
+      <value>Zero 2 W onboard Wi-Fi BLE</value>
+      <fields>
+        <field name="Review">Already inside Zero; no second purchased module</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="EMBEDDED_WIFI_BLE" description=""/>
+      <property name="Review" value="Already inside Zero; no second purchased module"/>
+      <property name="Sheetname" value="06 WIRELESS - EMBEDDED"/>
+      <property name="Sheetfile" value="wireless.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/06 WIRELESS - EMBEDDED/" tstamps="/44763fed-1979-4cbc-88e8-a3720f78679c/"/>
+      <tstamps>b916e90c-2af2-4103-ad7c-dec563c801a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>RED MIC POWER</value>
+      <footprint>MeetNote:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software</field>
+        <field name="Footprint">MeetNote:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="LED" description="Light emitting diode"/>
+      <property name="Review" value="Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>d890c042-4f4c-4401-ab96-d8d53e5290f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>AMBER CAMERA POWER</value>
+      <footprint>MeetNote:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software</field>
+        <field name="Footprint">MeetNote:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="LED" description="Light emitting diode"/>
+      <property name="Review" value="Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>e2e69d8a-67ea-4e6b-a910-bce91682748f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>BLUE UPLOAD</value>
+      <footprint>MeetNote:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software</field>
+        <field name="Footprint">MeetNote:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="LED" description="Light emitting diode"/>
+      <property name="Review" value="Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>41b5b338-8263-4c42-b8b8-5571dc497020</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>UART 3V3 debug</value>
+      <footprint>MeetNote:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>f7d27c40-c08b-4f8c-b615-03ae77519337</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>1k provisional</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>3a1581fc-688f-43cd-9093-0b473b835d37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>1k provisional</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>d270a8e6-5e2c-459e-8734-e32869613b77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>1k provisional</value>
+      <footprint>MeetNote:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Review">Library geometry; manufacturer pin review pending</field>
+        <field name="Footprint">MeetNote:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="R" description="Resistor"/>
+      <property name="Review" value="Library geometry; manufacturer pin review pending"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>d6a74764-6a33-4c81-8b83-5e841d2bd7b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>REC_BUTTON</value>
+      <footprint>MeetNote:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="Review">Switch MPN/force/travel not supplier-verified</field>
+        <field name="Footprint">MeetNote:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Review" value="Switch MPN/force/travel not supplier-verified"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>ab225de7-1f23-4207-bce9-101654625244</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>CAM_BUTTON</value>
+      <footprint>MeetNote:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="Review">Switch MPN/force/travel not supplier-verified</field>
+        <field name="Footprint">MeetNote:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Review" value="Switch MPN/force/travel not supplier-verified"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>bf2b2662-11be-4b9c-9c25-437e1a8a8464</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>ZOOM_PLUS</value>
+      <footprint>MeetNote:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="Review">Switch MPN/force/travel not supplier-verified</field>
+        <field name="Footprint">MeetNote:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Review" value="Switch MPN/force/travel not supplier-verified"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>ae234cc6-9210-40ca-9017-c4ac38cd5e84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>ZOOM_MINUS</value>
+      <footprint>MeetNote:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="Review">Switch MPN/force/travel not supplier-verified</field>
+        <field name="Footprint">MeetNote:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Review" value="Switch MPN/force/travel not supplier-verified"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>7dec3de6-34c9-4a68-b158-691be84fbbac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>UNVERIFIED dual-pole consent switch + gates</value>
+      <fields>
+        <field name="Review">BLOCKER: independent physical camera/microphone enable + anti-backfeed design incomplete</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MeetNote" part="UNVERIFIED_HARD_INTERLOCK" description=""/>
+      <property name="Review" value="BLOCKER: independent physical camera/microphone enable + anti-backfeed design incomplete"/>
+      <property name="Sheetname" value="07 UI AND DEBUG"/>
+      <property name="Sheetfile" value="ui_debug.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/07 UI AND DEBUG/" tstamps="/d288dd6b-7369-4756-a5b2-9915afc2ed36/"/>
+      <tstamps>e965de8d-e190-4c5a-969a-80c570b17457</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MeetNote" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="Conn_02x20_Odd_Even">
+      <description>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x20_Odd_Even</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+        <pin num="33" name="Pin_33" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="EMBEDDED_WIFI_BLE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EMBEDDED_WIFI_BLE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="INTERNAL_BUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="EXTERNAL_CAMERA_CSI">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EXTERNAL_CAMERA_CSI</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CSI_P/N" type="passive"/>
+        <pin num="2" name="CTRL_I2C" type="bidirectional"/>
+        <pin num="3" name="HARD_PERMIT" type="input"/>
+        <pin num="4" name="STATUS_SENSE" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="ICE40UP5K-SG48ITR">
+      <description>iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN</description>
+      <docs>http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra</docs>
+      <footprints>
+        <fp>QFN*1EP*7x7mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ICE40UP5K-SG48ITR</field>
+        <field name="Footprint">MeetNote:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm</field>
+        <field name="Datasheet">http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra</field>
+        <field name="Description">iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCIO_2" type="power_in"/>
+        <pin num="2" name="IOB_6a" type="bidirectional"/>
+        <pin num="3" name="IOB_9b" type="bidirectional"/>
+        <pin num="4" name="IOB_8a" type="bidirectional"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="IOB_13b" type="bidirectional"/>
+        <pin num="7" name="CDONE" type="open_collector"/>
+        <pin num="8" name="~{CRESET}" type="input"/>
+        <pin num="9" name="IOB_16a" type="bidirectional"/>
+        <pin num="10" name="IOB_18a" type="bidirectional"/>
+        <pin num="11" name="IOB_20a" type="bidirectional"/>
+        <pin num="12" name="IOB_22a" type="bidirectional"/>
+        <pin num="13" name="IOB_24a" type="bidirectional"/>
+        <pin num="14" name="IOB_32a_SPI_SO" type="bidirectional"/>
+        <pin num="15" name="IOB_34a_SPI_SCK" type="bidirectional"/>
+        <pin num="16" name="IOB_35b_SPI_SS" type="bidirectional"/>
+        <pin num="17" name="IOB_33b_SPI_SI" type="bidirectional"/>
+        <pin num="18" name="IOB_31b" type="bidirectional"/>
+        <pin num="19" name="IOB_29b" type="bidirectional"/>
+        <pin num="20" name="IOB_25b_G3" type="bidirectional"/>
+        <pin num="21" name="IOB_23b" type="bidirectional"/>
+        <pin num="22" name="SPI_VCCIO1" type="power_in"/>
+        <pin num="23" name="IOT_37a" type="bidirectional"/>
+        <pin num="24" name="VPP_2V5" type="power_in"/>
+        <pin num="25" name="IOT_36b" type="bidirectional"/>
+        <pin num="26" name="IOT_39a" type="bidirectional"/>
+        <pin num="27" name="IOT_38b" type="bidirectional"/>
+        <pin num="28" name="IOT_41a" type="bidirectional"/>
+        <pin num="29" name="VCCPLL" type="power_out"/>
+        <pin num="30" name="VCC" type="passive"/>
+        <pin num="31" name="IOT_42b" type="bidirectional"/>
+        <pin num="32" name="IOT_43a" type="bidirectional"/>
+        <pin num="33" name="VCCIO_0" type="power_in"/>
+        <pin num="34" name="IOT_44b" type="bidirectional"/>
+        <pin num="35" name="IOT_46b_G0" type="bidirectional"/>
+        <pin num="36" name="IOT_48b" type="bidirectional"/>
+        <pin num="37" name="IOT_45a_G1" type="bidirectional"/>
+        <pin num="38" name="IOT_50b" type="bidirectional"/>
+        <pin num="39" name="RGB0" type="open_collector"/>
+        <pin num="40" name="RGB1" type="open_collector"/>
+        <pin num="41" name="RGB2" type="open_collector"/>
+        <pin num="42" name="IOT_51a" type="bidirectional"/>
+        <pin num="43" name="IOT_49a" type="bidirectional"/>
+        <pin num="44" name="IOB_3b_G6" type="bidirectional"/>
+        <pin num="45" name="IOB_5b" type="bidirectional"/>
+        <pin num="46" name="IOB_0a" type="bidirectional"/>
+        <pin num="47" name="IOB_2a" type="bidirectional"/>
+        <pin num="48" name="IOB_4a" type="bidirectional"/>
+        <pin num="49" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="IM69D130">
+      <description>High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5</description>
+      <docs>https://www.infineon.com/dgdl/Infineon-IM69D130-DS-v01_00-EN.pdf?fileId=5546d462602a9dc801607a0e46511a2e</docs>
+      <footprints>
+        <fp>Infineon*PG*LLGA*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">IM69D130</field>
+        <field name="Footprint">MeetNote:Infineon_PG-LLGA-5-1</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IM69D130-DS-v01_00-EN.pdf?fileId=5546d462602a9dc801607a0e46511a2e</field>
+        <field name="Description">High performance digital XENSIV MEMS microphone, -36 dBFS Sensitivity, LLGA-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DATA" type="output"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="CLOCK" type="input"/>
+        <pin num="4" name="SELECT" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="UNVERIFIED_12M288_XO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UNVERIFIED_12M288_XO</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="UNVERIFIED_HARD_INTERLOCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UNVERIFIED_HARD_INTERLOCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="REC_PERMIT" type="output"/>
+        <pin num="4" name="CAM_PERMIT" type="output"/>
+        <pin num="5" name="REC_HW_ON" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MeetNote" part="UNVERIFIED_POWER_ASSEMBLY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UNVERIFIED_POWER_ASSEMBLY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS_5V" type="power_in"/>
+        <pin num="2" name="BAT_P" type="power_in"/>
+        <pin num="3" name="NTC_CELL" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SYS_5V" type="power_out"/>
+        <pin num="6" name="V3V3" type="power_out"/>
+        <pin num="7" name="V1V2" type="power_out"/>
+        <pin num="8" name="V2V5" type="power_out"/>
+        <pin num="9" name="MIC_CAPTURE_VDD" type="power_out"/>
+        <pin num="10" name="REC_PERMIT" type="input"/>
+        <pin num="11" name="CAM_PERMIT" type="input"/>
+        <pin num="12" name="LOW_BAT" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MeetNote">
+      <uri>${KIPRJMOD}/MeetNote.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="AUDIO_MCLK" class="Default">
+      <node ref="U1" pin="35" pinfunction="IOT_46b_G0_35" pintype="bidirectional"/>
+      <node ref="Y1" pin="3" pinfunction="OUT_3" pintype="output"/>
+    </net>
+    <net code="2" name="BAT_P" class="Default">
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="BAT_P_2" pintype="power_in"/>
+    </net>
+    <net code="3" name="CAM_BUTTON" class="Default">
+      <node ref="J1" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="CAM_HW_ON" class="Default">
+      <node ref="A2" pin="4" pinfunction="STATUS_SENSE_4" pintype="output"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="CAM_I2C_EXTERNAL" class="Default">
+      <node ref="A2" pin="2" pinfunction="CTRL_I2C_2" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="CAM_PERMIT" class="Default">
+      <node ref="A2" pin="3" pinfunction="HARD_PERMIT_3" pintype="input"/>
+      <node ref="J1" pin="26" pinfunction="Pin_26_26" pintype="passive"/>
+      <node ref="SW5" pin="4" pinfunction="CAM_PERMIT_4" pintype="output"/>
+      <node ref="U10" pin="11" pinfunction="CAM_PERMIT_11" pintype="input"/>
+    </net>
+    <net code="7" name="CSI_DIRECT_EXTERNAL" class="Default">
+      <node ref="A2" pin="1" pinfunction="CSI_P/N_1" pintype="passive"/>
+    </net>
+    <net code="8" name="ERROR_LED_CTL" class="Default">
+      <node ref="J1" pin="32" pinfunction="Pin_32_32" pintype="passive"/>
+    </net>
+    <net code="9" name="FPGA_DONE" class="Default">
+      <node ref="J1" pin="22" pinfunction="Pin_22_22" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="CDONE_7" pintype="open_collector"/>
+    </net>
+    <net code="10" name="FPGA_IRQ" class="Default">
+      <node ref="J1" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="IOT_42b_31" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="FPGA_RESET" class="Default">
+      <node ref="J1" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="~{CRESET}_8" pintype="input"/>
+    </net>
+    <net code="12" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="J1" pin="20" pinfunction="Pin_20_20" pintype="passive"/>
+      <node ref="J1" pin="25" pinfunction="Pin_25_25" pintype="passive"/>
+      <node ref="J1" pin="30" pinfunction="Pin_30_30" pintype="passive"/>
+      <node ref="J1" pin="34" pinfunction="Pin_34_34" pintype="passive"/>
+      <node ref="J1" pin="39" pinfunction="Pin_39_39" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="MK1" pin="4" pinfunction="SELECT_4" pintype="input"/>
+      <node ref="MK1" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="MK2" pin="4" pinfunction="SELECT_4" pintype="input"/>
+      <node ref="MK2" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="MK3" pin="4" pinfunction="SELECT_4" pintype="input"/>
+      <node ref="MK3" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="MK4" pin="4" pinfunction="SELECT_4" pintype="input"/>
+      <node ref="MK4" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U1" pin="49" pinfunction="GND_49" pintype="power_in"/>
+      <node ref="U10" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="Y1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="13" name="I2C_SCL" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="14" name="I2C_SDA" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="15" name="LED1_A" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="LED2_A" class="Default">
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="LED3_A" class="Default">
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="LOW_BAT" class="Default">
+      <node ref="J1" pin="31" pinfunction="Pin_31_31" pintype="passive"/>
+      <node ref="U10" pin="12" pinfunction="LOW_BAT_12" pintype="output"/>
+    </net>
+    <net code="19" name="MIC_CAPTURE_VDD" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="MK1" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="MK2" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="MK3" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="MK4" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="U10" pin="9" pinfunction="MIC_CAPTURE_VDD_9" pintype="power_out"/>
+    </net>
+    <net code="20" name="NTC_CELL" class="Default">
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="NTC_CELL_3" pintype="input"/>
+    </net>
+    <net code="21" name="PDM_CLK" class="Default">
+      <node ref="MK1" pin="3" pinfunction="CLOCK_3" pintype="input"/>
+      <node ref="MK2" pin="3" pinfunction="CLOCK_3" pintype="input"/>
+      <node ref="MK3" pin="3" pinfunction="CLOCK_3" pintype="input"/>
+      <node ref="MK4" pin="3" pinfunction="CLOCK_3" pintype="input"/>
+      <node ref="U1" pin="28" pinfunction="IOT_41a_28" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="PDM_D1" class="Default">
+      <node ref="MK1" pin="1" pinfunction="DATA_1" pintype="output"/>
+      <node ref="U1" pin="23" pinfunction="IOT_37a_23" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="PDM_D2" class="Default">
+      <node ref="MK2" pin="1" pinfunction="DATA_1" pintype="output"/>
+      <node ref="U1" pin="25" pinfunction="IOT_36b_25" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="PDM_D3" class="Default">
+      <node ref="MK3" pin="1" pinfunction="DATA_1" pintype="output"/>
+      <node ref="U1" pin="26" pinfunction="IOT_39a_26" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="PDM_D4" class="Default">
+      <node ref="MK4" pin="1" pinfunction="DATA_1" pintype="output"/>
+      <node ref="U1" pin="27" pinfunction="IOT_38b_27" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="RADIO_INTERNAL" class="Default">
+      <node ref="A3" pin="1" pinfunction="INTERNAL_BUS_1" pintype="passive"/>
+    </net>
+    <net code="27" name="REC_BUTTON" class="Default">
+      <node ref="J1" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="28" name="REC_HW_ON" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="SW5" pin="5" pinfunction="REC_HW_ON_5" pintype="output"/>
+    </net>
+    <net code="29" name="REC_PERMIT" class="Default">
+      <node ref="J1" pin="29" pinfunction="Pin_29_29" pintype="passive"/>
+      <node ref="SW5" pin="3" pinfunction="REC_PERMIT_3" pintype="output"/>
+      <node ref="U10" pin="10" pinfunction="REC_PERMIT_10" pintype="input"/>
+    </net>
+    <net code="30" name="SPI_CS" class="Default">
+      <node ref="J1" pin="24" pinfunction="Pin_24_24" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="IOB_35b_SPI_SS_16" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="SPI_MISO" class="Default">
+      <node ref="J1" pin="21" pinfunction="Pin_21_21" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="IOB_32a_SPI_SO_14" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="SPI_MOSI" class="Default">
+      <node ref="J1" pin="19" pinfunction="Pin_19_19" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="IOB_33b_SPI_SI_17" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="SPI_SCK" class="Default">
+      <node ref="J1" pin="23" pinfunction="Pin_23_23" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="IOB_34a_SPI_SCK_15" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="SYS_5V" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="SYS_5V_5" pintype="power_out"/>
+    </net>
+    <net code="35" name="UART_RX" class="Default">
+      <node ref="J1" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="36" name="UART_TX" class="Default">
+      <node ref="J1" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="37" name="UPLOAD_LED_CTL" class="Default">
+      <node ref="J1" pin="18" pinfunction="Pin_18_18" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="38" name="V1V2" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="VCC_30" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U10" pin="7" pinfunction="V1V2_7" pintype="power_out"/>
+    </net>
+    <net code="39" name="V1V2_PLL" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="VCCPLL_29" pintype="power_out"/>
+    </net>
+    <net code="40" name="V2V5" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="VPP_2V5_24" pintype="power_in"/>
+      <node ref="U10" pin="8" pinfunction="V2V5_8" pintype="power_out"/>
+    </net>
+    <net code="41" name="V3V3" class="Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J1" pin="17" pinfunction="Pin_17_17" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+      <node ref="U1" pin="1" pinfunction="VCCIO_2_1" pintype="power_in"/>
+      <node ref="U1" pin="22" pinfunction="SPI_VCCIO1_22" pintype="power_in"/>
+      <node ref="U1" pin="33" pinfunction="VCCIO_0_33" pintype="power_in"/>
+      <node ref="U10" pin="6" pinfunction="V3V3_6" pintype="power_out"/>
+      <node ref="Y1" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+    </net>
+    <net code="42" name="VBUS_5V" class="Default">
+      <node ref="U10" pin="1" pinfunction="VBUS_5V_1" pintype="power_in"/>
+    </net>
+    <net code="43" name="ZOOM_MINUS" class="Default">
+      <node ref="J1" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="44" name="ZOOM_PLUS" class="Default">
+      <node ref="J1" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="45" name="unconnected-(J1-Pin_27-Pad27)" class="Default">
+      <node ref="J1" pin="27" pinfunction="Pin_27_27" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(J1-Pin_28-Pad28)" class="Default">
+      <node ref="J1" pin="28" pinfunction="Pin_28_28" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(J1-Pin_33-Pad33)" class="Default">
+      <node ref="J1" pin="33" pinfunction="Pin_33_33" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(J1-Pin_35-Pad35)" class="Default">
+      <node ref="J1" pin="35" pinfunction="Pin_35_35" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(J1-Pin_36-Pad36)" class="Default">
+      <node ref="J1" pin="36" pinfunction="Pin_36_36" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(J1-Pin_37-Pad37)" class="Default">
+      <node ref="J1" pin="37" pinfunction="Pin_37_37" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(J1-Pin_38-Pad38)" class="Default">
+      <node ref="J1" pin="38" pinfunction="Pin_38_38" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(J1-Pin_40-Pad40)" class="Default">
+      <node ref="J1" pin="40" pinfunction="Pin_40_40" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1A-IOT_43a-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="IOT_43a_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1A-IOT_44b-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="IOT_44b_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1A-IOT_45a_G1-Pad37)" class="Default">
+      <node ref="U1" pin="37" pinfunction="IOT_45a_G1_37" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1A-IOT_48b-Pad36)" class="Default">
+      <node ref="U1" pin="36" pinfunction="IOT_48b_36" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1A-IOT_49a-Pad43)" class="Default">
+      <node ref="U1" pin="43" pinfunction="IOT_49a_43" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1A-IOT_50b-Pad38)" class="Default">
+      <node ref="U1" pin="38" pinfunction="IOT_50b_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U1A-IOT_51a-Pad42)" class="Default">
+      <node ref="U1" pin="42" pinfunction="IOT_51a_42" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U1A-RGB0-Pad39)" class="Default">
+      <node ref="U1" pin="39" pinfunction="RGB0_39" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U1A-RGB1-Pad40)" class="Default">
+      <node ref="U1" pin="40" pinfunction="RGB1_40" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U1A-RGB2-Pad41)" class="Default">
+      <node ref="U1" pin="41" pinfunction="RGB2_41" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U1B-IOB_13b-Pad6)" class="Default">
+      <node ref="U1" pin="6" pinfunction="IOB_13b_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U1B-IOB_16a-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="IOB_16a_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U1B-IOB_18a-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="IOB_18a_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U1B-IOB_20a-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="IOB_20a_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U1B-IOB_22a-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="IOB_22a_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U1B-IOB_23b-Pad21)" class="Default">
+      <node ref="U1" pin="21" pinfunction="IOB_23b_21" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U1B-IOB_24a-Pad13)" class="Default">
+      <node ref="U1" pin="13" pinfunction="IOB_24a_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U1B-IOB_25b_G3-Pad20)" class="Default">
+      <node ref="U1" pin="20" pinfunction="IOB_25b_G3_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U1B-IOB_29b-Pad19)" class="Default">
+      <node ref="U1" pin="19" pinfunction="IOB_29b_19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U1B-IOB_31b-Pad18)" class="Default">
+      <node ref="U1" pin="18" pinfunction="IOB_31b_18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U1C-IOB_0a-Pad46)" class="Default">
+      <node ref="U1" pin="46" pinfunction="IOB_0a_46" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U1C-IOB_2a-Pad47)" class="Default">
+      <node ref="U1" pin="47" pinfunction="IOB_2a_47" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U1C-IOB_3b_G6-Pad44)" class="Default">
+      <node ref="U1" pin="44" pinfunction="IOB_3b_G6_44" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U1C-IOB_4a-Pad48)" class="Default">
+      <node ref="U1" pin="48" pinfunction="IOB_4a_48" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U1C-IOB_5b-Pad45)" class="Default">
+      <node ref="U1" pin="45" pinfunction="IOB_5b_45" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U1C-IOB_6a-Pad2)" class="Default">
+      <node ref="U1" pin="2" pinfunction="IOB_6a_2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U1C-IOB_8a-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="IOB_8a_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U1C-IOB_9b-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="IOB_9b_3" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

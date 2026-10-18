@@ -1,0 +1,37 @@
+{
+  "solid_intersections": [],
+  "rf_keepout": [
+    {
+      "object": "HeatSpreader",
+      "volume_mm3": 528.0,
+      "status": "RF_KEEP_OUT_VIOLATION"
+    },
+    {
+      "object": "ThermalGapPad",
+      "volume_mm3": 1140.0,
+      "status": "RF_KEEP_OUT_VIOLATION"
+    }
+  ],
+  "clearances": {
+    "battery_to_pcb_nominal_mm": 2.0999999999999996,
+    "battery_to_pcb_with_1mm_growth_mm": 1.0999999999999996,
+    "camera_to_lid_inner_mm": 1.6999999999999993,
+    "pcb_import_bbox_mm": [
+      70.0,
+      70.0,
+      1.51
+    ],
+    "cables": "not modeled as flexible swept solids; FPC/harness remains unresolved",
+    "models": "package body envelopes only; board STEP import verified"
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ]
+}

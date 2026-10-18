@@ -1,0 +1,230 @@
+openapi: 3.1.0
+info:
+  title: MeetNote Draft API
+  version: 0.1.0-draft
+  description: Contract only. No server is deployed. Production requires TLS, tenant isolation and durable transactional storage.
+servers:
+  - url: https://api.example.invalid
+security:
+  - deviceToken: []
+paths:
+  /v1/meetings:
+    post:
+      operationId: createMeeting
+      parameters:
+        - in: header
+          name: Idempotency-Key
+          required: true
+          schema: {type: string, format: uuid}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [consent_event_id, boot_id, timezone]
+              properties:
+                consent_event_id: {type: string}
+                boot_id: {type: string, format: uuid}
+                timezone: {type: string, example: Asia/Shanghai}
+      responses:
+        '201':
+          description: Meeting created and scoped to authenticated device and tenant
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [meeting_id]
+                properties:
+                  meeting_id: {type: string, format: uuid}
+        '409': {description: Idempotency key reused with different body}
+  /v1/meetings/{meeting_id}/uploads:
+    parameters:
+      - $ref: '#/components/parameters/MeetingId'
+    post:
+      operationId: createUpload
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [chunk_id, sha256, bytes, sequence, key_id]
+              properties:
+                chunk_id: {type: string, format: uuid}
+                sha256: {type: string, pattern: '^[a-f0-9]{64}$'}
+                bytes: {type: integer, minimum: 1, maximum: 33554432}
+                sequence: {type: integer, minimum: 0}
+                key_id: {type: string}
+      responses:
+        '201':
+          description: Idempotent by meeting plus chunk_id; conflicting hash rejected
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  upload_id: {type: string, format: uuid}
+                  offset: {type: integer, minimum: 0}
+        '409': {description: Existing chunk_id with different content}
+  /v1/uploads/{upload_id}:
+    parameters:
+      - $ref: '#/components/parameters/UploadId'
+    head:
+      operationId: queryOffset
+      responses:
+        '200':
+          description: Durable contiguous bytes only
+          headers:
+            Upload-Offset: {schema: {type: integer, minimum: 0}}
+        '404': {description: Not found or not authorized for this tenant}
+    patch:
+      operationId: appendUpload
+      parameters:
+        - in: header
+          name: Upload-Offset
+          required: true
+          schema: {type: integer, minimum: 0}
+      requestBody:
+        required: true
+        content:
+          application/octet-stream:
+            schema: {type: string, format: binary}
+      responses:
+        '204':
+          description: Appended or exact-byte retry accepted, serialized per upload
+          headers:
+            Upload-Offset: {schema: {type: integer, minimum: 0}}
+        '409': {description: Offset conflict; query HEAD and resume}
+        '413': {description: Declared size or tenant quota exceeded}
+        '429':
+          description: Retry later
+          headers:
+            Retry-After: {schema: {type: integer}}
+  /v1/uploads/{upload_id}/complete:
+    parameters:
+      - $ref: '#/components/parameters/UploadId'
+    post:
+      operationId: finalizeUpload
+      responses:
+        '200': {description: Durable exact length and ciphertext SHA verified; idempotent}
+        '422': {description: Incomplete length or digest failure; not available for processing}
+  /v1/meetings/{meeting_id}/process:
+    parameters:
+      - $ref: '#/components/parameters/MeetingId'
+    post:
+      operationId: processMeeting
+      responses:
+        '202':
+          description: ASR/OCR/summary job queued after authorization to unwrap key
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id: {type: string, format: uuid}
+        '409': {description: Incomplete manifest or incompatible protocol version}
+  /v1/jobs/{job_id}:
+    get:
+      operationId: queryJob
+      parameters:
+        - in: path
+          name: job_id
+          required: true
+          schema: {type: string, format: uuid}
+      responses:
+        '200':
+          description: Processing status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  state: {enum: [queued, running, failed, succeeded]}
+                  error_code: {type: [string, 'null']}
+  /v1/meetings/{meeting_id}/results:
+    parameters:
+      - $ref: '#/components/parameters/MeetingId'
+    get:
+      operationId: getResults
+      responses:
+        '200':
+          description: Versioned candidates, never automatically accepted decisions
+          headers:
+            ETag: {schema: {type: string}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [version, candidates]
+                properties:
+                  version: {type: integer}
+                  candidates:
+                    type: array
+                    items: {$ref: '#/components/schemas/Candidate'}
+  /v1/meetings/{meeting_id}/confirmations:
+    parameters:
+      - $ref: '#/components/parameters/MeetingId'
+    post:
+      operationId: confirmCandidate
+      security:
+        - userToken: []
+      parameters:
+        - in: header
+          name: If-Match
+          required: true
+          schema: {type: string}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [candidate_id, action]
+              properties:
+                candidate_id: {type: string, format: uuid}
+                action: {enum: [confirm, edit, reject]}
+                edited_text: {type: string}
+                assignee_id: {type: [string, 'null']}
+                due_at: {type: [string, 'null'], format: date-time}
+      responses:
+        '200': {description: Human confirmation audit persisted with authenticated identity}
+        '412': {description: Stale result version; reload before confirmation}
+components:
+  securitySchemes:
+    deviceToken: {type: http, scheme: bearer, bearerFormat: device-scoped-short-lived-token}
+    userToken: {type: http, scheme: bearer, bearerFormat: user-scoped-short-lived-token}
+  parameters:
+    MeetingId:
+      in: path
+      name: meeting_id
+      required: true
+      schema: {type: string, format: uuid}
+    UploadId:
+      in: path
+      name: upload_id
+      required: true
+      schema: {type: string, format: uuid}
+  schemas:
+    Candidate:
+      type: object
+      required: [candidate_id, text, status, evidence]
+      properties:
+        candidate_id: {type: string, format: uuid}
+        text: {type: string}
+        status: {enum: [needs_confirmation, confirmed, rejected, edited]}
+        assignee_id: {type: [string, 'null']}
+        due_at: {type: [string, 'null'], format: date-time}
+        model_version: {type: string}
+        evidence:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            required: [chunk_sha256, start_sample, end_sample, sample_rate, boot_id]
+            properties:
+              chunk_sha256: {type: string, pattern: '^[a-f0-9]{64}$'}
+              start_sample: {type: integer, minimum: 0}
+              end_sample: {type: integer, minimum: 1}
+              sample_rate: {const: 16000}
+              boot_id: {type: string, format: uuid}

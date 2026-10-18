@@ -1,0 +1,14 @@
+import FreeCAD as App,FreeCADGui as Gui,json
+from pathlib import Path
+from PySide import QtCore,QtGui
+R=Path(__file__).resolve().parents[1]
+d=App.openDocument(str(R/'mechanical/MeetNote_R2.FCStd'))
+rows={x['name']:x for x in json.loads((R/'mechanical/scene_manifest.json').read_text())}
+colors={'aluminum':(.55,.63,.65),'polymer':(.12,.17,.18),'pcb':(.08,.35,.23),'battery':(.65,.65,.68),'chip':(.06,.07,.08),'glass':(.08,.13,.17),'ceramic':(.8,.65,.35),'red':(.9,.1,.03),'amber':(.9,.6,.06),'fpc':(.7,.35,.04),'gasket':(.14,.14,.14),'thermal':(.4,.6,.7)}
+for o in d.Objects:
+ if o.ViewObject:
+  o.ViewObject.Visibility=o.Name in rows
+  if o.Name in rows and hasattr(o.ViewObject,'ShapeColor'):o.ViewObject.ShapeColor=colors.get(rows[o.Name]['material'],(.35,.38,.4))
+Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll();d.recompute();d.save()
+(R/'verification/freecad_gui_save.txt').write_text('Native FreeCAD opened and saved with only final assembly parts visible.\n')
+QtCore.QTimer.singleShot(1000,QtGui.QApplication.instance().quit)

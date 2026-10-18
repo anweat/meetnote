@@ -1,0 +1,1 @@
+GUI view providers saved with only final assembly features visible.

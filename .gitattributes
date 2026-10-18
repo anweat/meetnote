@@ -1,0 +1,2 @@
+# 保持原始字节：FILE_MANIFEST.csv 记录的是原文件 SHA-256，禁止 EOL 转换
+* -text

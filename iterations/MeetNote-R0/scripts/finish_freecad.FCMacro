@@ -1,0 +1,22 @@
+import FreeCAD as App,FreeCADGui as Gui,json
+from pathlib import Path
+from PySide import QtCore,QtGui
+R=Path(__file__).resolve().parents[1]
+d=App.openDocument(str(R/'mechanical/MeetNote_R0.FCStd'))
+final={x['name'] for x in json.loads((R/'mechanical/scene_manifest.json').read_text())}
+for o in d.Objects:
+ if o.ViewObject:
+  o.ViewObject.Visibility=o.Name in final
+  if hasattr(o.ViewObject,'ShapeColor'):
+   c=(.18,.22,.27)
+   if o.Name.startswith('Lid'):c=(.75,.78,.8)
+   elif o.Name=='CarrierImportedKiCad':c=(.04,.35,.22)
+   elif o.Name=='BatteryEnvelope':c=(.55,.57,.6)
+   elif o.Name=='CameraEnvelope':c=(.1,.1,.1)
+   elif o.Name.startswith('LightPipe'):c=(.9,.2,.03)
+   o.ViewObject.ShapeColor=c
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+d.recompute();d.save()
+(R/'verification/freecad_gui_save.txt').write_text('GUI view providers saved with only final assembly features visible.\n')
+QtCore.QTimer.singleShot(1000,QtGui.QApplication.instance().quit)

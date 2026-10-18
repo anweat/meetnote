@@ -1,0 +1,72 @@
+/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/scripts/build_blender.py:7: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world.use_nodes=True;s.world.node_tree.nodes.clear();bg=s.world.node_tree.nodes.new('ShaderNodeBackground');wo=s.world.node_tree.nodes.new('ShaderNodeOutputWorld');bg.inputs[0].default_value=(.21,.25,.26,1);bg.inputs[1].default_value=.6;s.world.node_tree.links.new(bg.outputs[0],wo.inputs['Surface'])
+/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/scripts/build_blender.py:9: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(n);m.diffuse_color=(*c,1);m.use_nodes=True;m.node_tree.nodes.clear();p=m.node_tree.nodes.new('ShaderNodeBsdfPrincipled');o=m.node_tree.nodes.new('ShaderNodeOutputMaterial');m.node_tree.links.new(p.outputs['BSDF'],o.inputs['Surface']);p.inputs['Base Color'].default_value=(*c,1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough;p.inputs['Emission Color'].default_value=(*c,1);p.inputs['Emission Strength'].default_value=em;return m
+00:08.803  render           | Saved: '/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/visuals/01_front.png'
+00:15.985  render           | Saved: '/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/visuals/02_back.png'
+00:23.966  render           | Saved: '/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/visuals/03_section.png'
+00:32.258  render           | Saved: '/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R2-metal/visuals/04_exploded.png'
+信息: 已另存为 "MeetNote_R2.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+Timer 'STL Import' took 0.95 ms
+Timer 'STL Import' took 0.40 ms
+Timer 'STL Import' took 0.65 ms
+Timer 'STL Import' took 0.37 ms
+Timer 'STL Import' took 0.62 ms
+Timer 'STL Import' took 0.29 ms
+Timer 'STL Import' took 0.22 ms
+Timer 'STL Import' took 0.37 ms
+Timer 'STL Import' took 0.49 ms
+Timer 'STL Import' took 0.22 ms
+Timer 'STL Import' took 0.73 ms
+Timer 'STL Import' took 0.64 ms
+Timer 'STL Import' took 0.21 ms
+Timer 'STL Import' took 0.42 ms
+Timer 'STL Import' took 0.49 ms
+Timer 'STL Import' took 0.22 ms
+Timer 'STL Import' took 0.24 ms
+Timer 'STL Import' took 0.64 ms
+Timer 'STL Import' took 0.16 ms
+Timer 'STL Import' took 0.15 ms
+Timer 'STL Import' took 68250 ns
+Timer 'STL Import' took 70875 ns
+Timer 'STL Import' took 0.29 ms
+Timer 'STL Import' took 0.41 ms
+Timer 'STL Import' took 0.14 ms
+Timer 'STL Import' took 0.55 ms
+Timer 'STL Import' took 69917 ns
+Timer 'STL Import' took 76542 ns
+Timer 'STL Import' took 72959 ns
+Timer 'STL Import' took 69625 ns
+Timer 'STL Import' took 67542 ns
+Timer 'STL Import' took 72166 ns
+Timer 'STL Import' took 62667 ns
+Timer 'STL Import' took 58250 ns
+Timer 'STL Import' took 73750 ns
+Timer 'STL Import' took 65875 ns
+Timer 'STL Import' took 63292 ns
+Timer 'STL Import' took 63750 ns
+Timer 'STL Import' took 62209 ns
+Timer 'STL Import' took 62667 ns
+Timer 'STL Import' took 58417 ns
+Timer 'STL Import' took 66791 ns
+Timer 'STL Import' took 0.32 ms
+Timer 'STL Import' took 64375 ns
+Timer 'STL Import' took 0.42 ms
+Timer 'STL Import' took 0.30 ms
+Timer 'STL Import' took 0.15 ms
+Timer 'STL Import' took 0.38 ms
+Timer 'STL Import' took 0.45 ms
+Timer 'STL Import' took 0.16 ms
+Timer 'STL Import' took 0.23 ms
+Timer 'STL Import' took 0.14 ms
+Timer 'STL Import' took 0.13 ms
+Timer 'STL Import' took 0.23 ms
+Timer 'STL Import' took 0.15 ms
+Timer 'STL Import' took 0.16 ms
+Timer 'STL Import' took 64042 ns
+Timer 'STL Import' took 66042 ns
+Timer 'STL Import' took 97500 ns
+Timer 'STL Import' took 69584 ns
+
+Blender quit

@@ -1,0 +1,21 @@
+{
+  "release_status": "BLOCKED_NOT_FOR_FAB",
+  "erc_errors": 3,
+  "erc_warnings": 7,
+  "drc_violations": 4,
+  "unconnected_items": 93,
+  "schematic_parity_issues": 0,
+  "unresolved_interface_blocks": [
+    "SW5",
+    "U10",
+    "Y1"
+  ],
+  "modeled_solid_intersections": 0,
+  "rf_keepout_violations": 2,
+  "physical_tests_performed": false,
+  "physical_tests_required": [
+    "2h power and thermal at 35C",
+    "multichannel audio continuity and physical capture inhibit",
+    "assembled radio and whiteboard camera quality"
+  ]
+}

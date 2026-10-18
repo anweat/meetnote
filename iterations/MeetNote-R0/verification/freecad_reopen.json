@@ -1,0 +1,296 @@
+{
+  "FCStd_final_objects": [
+    {
+      "name": "BaseConsentOpening",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28908.0025
+    },
+    {
+      "name": "LidLED2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24610.375
+    },
+    {
+      "name": "CarrierImportedKiCad",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7286.5264
+    },
+    {
+      "name": "BatteryEnvelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21900.0
+    },
+    {
+      "name": "Zero2WEnvelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11700.0
+    },
+    {
+      "name": "CameraEnvelope",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6900.0
+    },
+    {
+      "name": "HeatSpreader",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 528.0
+    },
+    {
+      "name": "ThermalGapPad",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1140.0
+    },
+    {
+      "name": "USBPowerBoardReserved",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2304.0
+    },
+    {
+      "name": "ConsentSwitchReserved",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 672.0
+    },
+    {
+      "name": "ECAD_J2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 132.96
+    },
+    {
+      "name": "ECAD_J3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 132.96
+    },
+    {
+      "name": "ECAD_J4",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 132.96
+    },
+    {
+      "name": "ECAD_J1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2040.0
+    },
+    {
+      "name": "ECAD_U1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 49.0
+    },
+    {
+      "name": "ECAD_R1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_C1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_C2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_C3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_C4",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_R2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_R3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_MK1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14.4
+    },
+    {
+      "name": "ECAD_C5",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_MK2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14.4
+    },
+    {
+      "name": "ECAD_C6",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_MK3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14.4
+    },
+    {
+      "name": "ECAD_C7",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_MK4",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14.4
+    },
+    {
+      "name": "ECAD_C8",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_SW1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 90.0
+    },
+    {
+      "name": "ECAD_SW2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 90.0
+    },
+    {
+      "name": "ECAD_SW3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 90.0
+    },
+    {
+      "name": "ECAD_SW4",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 90.0
+    },
+    {
+      "name": "ECAD_D1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_R4",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_D2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_R5",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_D3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_R6",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.024
+    },
+    {
+      "name": "ECAD_J5",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 254.88
+    },
+    {
+      "name": "ButtonAssembly0",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 101.9384
+    },
+    {
+      "name": "ButtonAssembly1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 101.9384
+    },
+    {
+      "name": "ButtonAssembly2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 101.9384
+    },
+    {
+      "name": "ButtonAssembly3",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 101.9384
+    },
+    {
+      "name": "LightPipe0",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36.898
+    },
+    {
+      "name": "LightPipe1",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36.898
+    },
+    {
+      "name": "LightPipe2",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36.898
+    }
+  ],
+  "all_valid": true,
+  "step_valid": true,
+  "step_solids": 48,
+  "current_pcb_step_difference_mm3": 0.0
+}

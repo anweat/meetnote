@@ -1,0 +1,224 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-29T15:16:50",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7",
+            "violations": [
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'VBUS_5V'",
+                            "pos": {
+                                "x": 0.6477,
+                                "y": 0.6604
+                            },
+                            "uuid": "e998ecf2-1dfc-469c-ad99-c7e86e526aff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'CSI_DIRECT_EXTERNAL'",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 0.6223
+                            },
+                            "uuid": "8618ee5a-2af2-4490-acf6-dd6d6b6fe905"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'CAM_I2C_EXTERNAL'",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 0.6477
+                            },
+                            "uuid": "6b13de35-47f4-4b7c-a84f-730e60cce73c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'I2C_SDA'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.6985
+                            },
+                            "uuid": "0e5552c1-4e14-4045-8894-d831b20c1807"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'I2C_SCL'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.7239
+                            },
+                            "uuid": "0900c39e-cb45-482d-93b9-905a8c715345"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'ERROR_LED_CTL'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 1.0541
+                            },
+                            "uuid": "cd174774-6e7d-4635-a7a6-dc8bdf4c4868"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'RADIO_INTERNAL'",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 0.6223
+                            },
+                            "uuid": "f0c70db1-d808-4570-b09b-70eee8e342f7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        },
+        {
+            "path": "/01 POWER - UNRESOLVED/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/2a0d2075-548e-4c12-a24d-3c30824ec37c",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U10 Pin 1 [VBUS_5V, Power input, Line]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 0.6604
+                            },
+                            "uuid": "c3dfce8e-998a-4200-a042-bea9ee38b1d1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U10 Pin 2 [BAT_P, Power input, Line]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 0.6858
+                            },
+                            "uuid": "7dc7c058-155a-46e6-9810-1121d1578db2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/02 COMPUTE AND STORAGE/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/55568125-ece6-4585-882c-7328d0aaaf0b",
+            "violations": []
+        },
+        {
+            "path": "/03 FPGA AUDIO FRONT END/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/997bd64c-5c6f-43d3-9bd6-84c512041bd1",
+            "violations": []
+        },
+        {
+            "path": "/04 CAMERA - EXTERNAL/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/20ac713b-30b3-4c89-aa5a-fbef3e2042c8",
+            "violations": []
+        },
+        {
+            "path": "/05 FOUR MICROPHONES/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/42d1cc05-9a0a-476b-89b9-6cc6f9d6e145",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol MK1 Pin 5 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 0.6477,
+                                "y": 0.7239
+                            },
+                            "uuid": "cd619e80-cb66-4add-a22f-dae285c99905"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/06 WIRELESS - EMBEDDED/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/44763fed-1979-4cbc-88e8-a3720f78679c",
+            "violations": []
+        },
+        {
+            "path": "/07 UI AND DEBUG/",
+            "uuid_path": "/f4361b53-0c71-4f7a-ada7-b97f2ca7cfe7/d288dd6b-7369-4756-a5b2-9915afc2ed36",
+            "violations": []
+        }
+    ],
+    "source": "MeetNote.kicad_sch"
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "reference": "J2",
+    "value": "BATTERY 1S",
+    "x": 58,
+    "y": 15,
+    "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+    "height_estimate_mm": 8,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "J3",
+    "value": "REGULATED 5V IN",
+    "x": 58,
+    "y": 24,
+    "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+    "height_estimate_mm": 8,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "J4",
+    "value": "CELL NTC",
+    "x": 50,
+    "y": 10,
+    "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+    "height_estimate_mm": 8,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "J1",
+    "value": "Zero 2 W GPIO via short harness",
+    "x": 15,
+    "y": 10,
+    "footprint": "PinHeader_2x20_P2.54mm_Vertical",
+    "height_estimate_mm": 8,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "U1",
+    "value": "ICE40UP5K-SG48ITR",
+    "x": 34,
+    "y": 22,
+    "footprint": "QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R1",
+    "value": "100R PLL filter provisional",
+    "x": 40,
+    "y": 18,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C1",
+    "value": "100nF 10V",
+    "x": 27,
+    "y": 30,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C2",
+    "value": "100nF 10V",
+    "x": 32,
+    "y": 30,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C3",
+    "value": "100nF 10V",
+    "x": 37,
+    "y": 30,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C4",
+    "value": "100nF 10V",
+    "x": 42,
+    "y": 30,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R2",
+    "value": "10k",
+    "x": 28,
+    "y": 16,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R3",
+    "value": "10k",
+    "x": 35,
+    "y": 16,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "MK1",
+    "value": "IM69D130",
+    "x": 4,
+    "y": 4,
+    "footprint": "Infineon_PG-LLGA-5-1",
+    "height_estimate_mm": 1.2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C5",
+    "value": "100nF 10V",
+    "x": 8,
+    "y": 4,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "MK2",
+    "value": "IM69D130",
+    "x": 66,
+    "y": 4,
+    "footprint": "Infineon_PG-LLGA-5-1",
+    "height_estimate_mm": 1.2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C6",
+    "value": "100nF 10V",
+    "x": 62,
+    "y": 4,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "MK3",
+    "value": "IM69D130",
+    "x": 4,
+    "y": 66,
+    "footprint": "Infineon_PG-LLGA-5-1",
+    "height_estimate_mm": 1.2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C7",
+    "value": "100nF 10V",
+    "x": 8,
+    "y": 66,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "MK4",
+    "value": "IM69D130",
+    "x": 66,
+    "y": 66,
+    "footprint": "Infineon_PG-LLGA-5-1",
+    "height_estimate_mm": 1.2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "C8",
+    "value": "100nF 10V",
+    "x": 62,
+    "y": 66,
+    "footprint": "C_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "SW1",
+    "value": "REC_BUTTON",
+    "x": 25,
+    "y": 61,
+    "footprint": "SW_SPST_TL3342",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "SW2",
+    "value": "CAM_BUTTON",
+    "x": 36,
+    "y": 61,
+    "footprint": "SW_SPST_TL3342",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "SW3",
+    "value": "ZOOM_PLUS",
+    "x": 47,
+    "y": 61,
+    "footprint": "SW_SPST_TL3342",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "SW4",
+    "value": "ZOOM_MINUS",
+    "x": 58,
+    "y": 61,
+    "footprint": "SW_SPST_TL3342",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "D1",
+    "value": "RED MIC POWER",
+    "x": 25,
+    "y": 44,
+    "footprint": "LED_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R4",
+    "value": "1k provisional",
+    "x": 25,
+    "y": 40,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "D2",
+    "value": "AMBER CAMERA POWER",
+    "x": 25,
+    "y": 52,
+    "footprint": "LED_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R5",
+    "value": "1k provisional",
+    "x": 25,
+    "y": 48,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "D3",
+    "value": "BLUE UPLOAD",
+    "x": 25,
+    "y": 36,
+    "footprint": "LED_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "R6",
+    "value": "1k provisional",
+    "x": 25,
+    "y": 32,
+    "footprint": "R_0603_1608Metric",
+    "height_estimate_mm": 2,
+    "body_model": "not supplier verified"
+  },
+  {
+    "reference": "J5",
+    "value": "UART 3V3 debug",
+    "x": 44,
+    "y": 14,
+    "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+    "height_estimate_mm": 8,
+    "body_model": "not supplier verified"
+  }
+]

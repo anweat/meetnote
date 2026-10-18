@@ -1,0 +1,242 @@
+[
+  {
+    "name": "BaseConsentOpening",
+    "label": "BASE - 82x118x16 - prototype",
+    "mesh": "meshes/BaseConsentOpening.stl"
+  },
+  {
+    "name": "LidLED2",
+    "label": "LID - removable, 0.2mm seam",
+    "mesh": "meshes/LidLED2.stl"
+  },
+  {
+    "name": "CarrierImportedKiCad",
+    "label": "PCB IMPORTED FROM KiCad STEP (board only)",
+    "mesh": "meshes/CarrierImportedKiCad.stl"
+  },
+  {
+    "name": "BatteryEnvelope",
+    "label": "BatteryEnvelope",
+    "mesh": "meshes/BatteryEnvelope.stl"
+  },
+  {
+    "name": "Zero2WEnvelope",
+    "label": "Zero 2 W conservative module envelope; connector geometry pending",
+    "mesh": "meshes/Zero2WEnvelope.stl"
+  },
+  {
+    "name": "CameraEnvelope",
+    "label": "Camera Module 3 maximum envelope; exact lens axis pending drawing",
+    "mesh": "meshes/CameraEnvelope.stl"
+  },
+  {
+    "name": "HeatSpreader",
+    "label": "Al heat spreader PROVISIONAL - RF exception must be verified",
+    "mesh": "meshes/HeatSpreader.stl"
+  },
+  {
+    "name": "ThermalGapPad",
+    "label": "ThermalGapPad",
+    "mesh": "meshes/ThermalGapPad.stl"
+  },
+  {
+    "name": "USBPowerBoardReserved",
+    "label": "UNVERIFIED USB/charge PCB reservation, not a purchased module",
+    "mesh": "meshes/USBPowerBoardReserved.stl"
+  },
+  {
+    "name": "ConsentSwitchReserved",
+    "label": "UNVERIFIED dual pole physical switch reservation",
+    "mesh": "meshes/ConsentSwitchReserved.stl"
+  },
+  {
+    "name": "ECAD_J2",
+    "label": "J2 approximate component body",
+    "mesh": "meshes/ECAD_J2.stl"
+  },
+  {
+    "name": "ECAD_J3",
+    "label": "J3 approximate component body",
+    "mesh": "meshes/ECAD_J3.stl"
+  },
+  {
+    "name": "ECAD_J4",
+    "label": "J4 approximate component body",
+    "mesh": "meshes/ECAD_J4.stl"
+  },
+  {
+    "name": "ECAD_J1",
+    "label": "J1 approximate component body",
+    "mesh": "meshes/ECAD_J1.stl"
+  },
+  {
+    "name": "ECAD_U1",
+    "label": "U1 approximate component body",
+    "mesh": "meshes/ECAD_U1.stl"
+  },
+  {
+    "name": "ECAD_R1",
+    "label": "R1 approximate component body",
+    "mesh": "meshes/ECAD_R1.stl"
+  },
+  {
+    "name": "ECAD_C1",
+    "label": "C1 approximate component body",
+    "mesh": "meshes/ECAD_C1.stl"
+  },
+  {
+    "name": "ECAD_C2",
+    "label": "C2 approximate component body",
+    "mesh": "meshes/ECAD_C2.stl"
+  },
+  {
+    "name": "ECAD_C3",
+    "label": "C3 approximate component body",
+    "mesh": "meshes/ECAD_C3.stl"
+  },
+  {
+    "name": "ECAD_C4",
+    "label": "C4 approximate component body",
+    "mesh": "meshes/ECAD_C4.stl"
+  },
+  {
+    "name": "ECAD_R2",
+    "label": "R2 approximate component body",
+    "mesh": "meshes/ECAD_R2.stl"
+  },
+  {
+    "name": "ECAD_R3",
+    "label": "R3 approximate component body",
+    "mesh": "meshes/ECAD_R3.stl"
+  },
+  {
+    "name": "ECAD_MK1",
+    "label": "MK1 approximate component body",
+    "mesh": "meshes/ECAD_MK1.stl"
+  },
+  {
+    "name": "ECAD_C5",
+    "label": "C5 approximate component body",
+    "mesh": "meshes/ECAD_C5.stl"
+  },
+  {
+    "name": "ECAD_MK2",
+    "label": "MK2 approximate component body",
+    "mesh": "meshes/ECAD_MK2.stl"
+  },
+  {
+    "name": "ECAD_C6",
+    "label": "C6 approximate component body",
+    "mesh": "meshes/ECAD_C6.stl"
+  },
+  {
+    "name": "ECAD_MK3",
+    "label": "MK3 approximate component body",
+    "mesh": "meshes/ECAD_MK3.stl"
+  },
+  {
+    "name": "ECAD_C7",
+    "label": "C7 approximate component body",
+    "mesh": "meshes/ECAD_C7.stl"
+  },
+  {
+    "name": "ECAD_MK4",
+    "label": "MK4 approximate component body",
+    "mesh": "meshes/ECAD_MK4.stl"
+  },
+  {
+    "name": "ECAD_C8",
+    "label": "C8 approximate component body",
+    "mesh": "meshes/ECAD_C8.stl"
+  },
+  {
+    "name": "ECAD_SW1",
+    "label": "SW1 approximate component body",
+    "mesh": "meshes/ECAD_SW1.stl"
+  },
+  {
+    "name": "ECAD_SW2",
+    "label": "SW2 approximate component body",
+    "mesh": "meshes/ECAD_SW2.stl"
+  },
+  {
+    "name": "ECAD_SW3",
+    "label": "SW3 approximate component body",
+    "mesh": "meshes/ECAD_SW3.stl"
+  },
+  {
+    "name": "ECAD_SW4",
+    "label": "SW4 approximate component body",
+    "mesh": "meshes/ECAD_SW4.stl"
+  },
+  {
+    "name": "ECAD_D1",
+    "label": "D1 approximate component body",
+    "mesh": "meshes/ECAD_D1.stl"
+  },
+  {
+    "name": "ECAD_R4",
+    "label": "R4 approximate component body",
+    "mesh": "meshes/ECAD_R4.stl"
+  },
+  {
+    "name": "ECAD_D2",
+    "label": "D2 approximate component body",
+    "mesh": "meshes/ECAD_D2.stl"
+  },
+  {
+    "name": "ECAD_R5",
+    "label": "R5 approximate component body",
+    "mesh": "meshes/ECAD_R5.stl"
+  },
+  {
+    "name": "ECAD_D3",
+    "label": "D3 approximate component body",
+    "mesh": "meshes/ECAD_D3.stl"
+  },
+  {
+    "name": "ECAD_R6",
+    "label": "R6 approximate component body",
+    "mesh": "meshes/ECAD_R6.stl"
+  },
+  {
+    "name": "ECAD_J5",
+    "label": "J5 approximate component body",
+    "mesh": "meshes/ECAD_J5.stl"
+  },
+  {
+    "name": "ButtonAssembly0",
+    "label": "ButtonAssembly0",
+    "mesh": "meshes/ButtonAssembly0.stl"
+  },
+  {
+    "name": "ButtonAssembly1",
+    "label": "ButtonAssembly1",
+    "mesh": "meshes/ButtonAssembly1.stl"
+  },
+  {
+    "name": "ButtonAssembly2",
+    "label": "ButtonAssembly2",
+    "mesh": "meshes/ButtonAssembly2.stl"
+  },
+  {
+    "name": "ButtonAssembly3",
+    "label": "ButtonAssembly3",
+    "mesh": "meshes/ButtonAssembly3.stl"
+  },
+  {
+    "name": "LightPipe0",
+    "label": "LightPipe0",
+    "mesh": "meshes/LightPipe0.stl"
+  },
+  {
+    "name": "LightPipe1",
+    "label": "LightPipe1",
+    "mesh": "meshes/LightPipe1.stl"
+  },
+  {
+    "name": "LightPipe2",
+    "label": "LightPipe2",
+    "mesh": "meshes/LightPipe2.stl"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "currency": "CNY",
+  "quantity": "1 assembled unit; minimum purchasing batches paid in full",
+  "not_a_quote": true,
+  "groups": {
+    "电子": [
+      845,
+      1570
+    ],
+    "制造": [
+      380,
+      1000
+    ],
+    "结构": [
+      710,
+      1840
+    ],
+    "其他": [
+      50,
+      120
+    ]
+  },
+  "first_build_range": [
+    1985,
+    4530
+  ],
+  "with_25_percent_rework_reserve": [
+    2481,
+    5662
+  ],
+  "excludes": [
+    "engineering labor and firmware development",
+    "test instruments",
+    "cloud recurring fees",
+    "certification",
+    "injection mold",
+    "custom optical full lamination"
+  ],
+  "thermal_extra_W_assumptions": {
+    "gnss_full_module_and_antenna": 0.18,
+    "imu_and_always_on": 0.025
+  },
+  "recording_total_W_with_GNSS": 2.805,
+  "runtime_2500mAh_h": 2.0894117647058823
+}

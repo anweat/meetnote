@@ -1,0 +1,50 @@
+{
+  "evidence_level": "local arithmetic and constraint checks; not hardware testing",
+  "usable_Wh": 5.8608,
+  "runtime_h": {
+    "R0_recording": 2.3921632653061224,
+    "R1_meeting": 2.254153846153846,
+    "active_preview_assistant": 1.723764705882353,
+    "optimized_recording_target": 4.884
+  },
+  "max_average_load_W_for_2h": 2.9304,
+  "envelopes": {
+    "R0": {
+      "bounding_box_volume_cm3": 280.60400000000004,
+      "box_area_m2_before_rounding": 0.030952,
+      "estimated_average_rise_C": 18.356869287342278,
+      "load_W_at_contact_target": 1.133090816,
+      "thermal_screening": "FAIL",
+      "old_70mm_carrier_fits_inner_width_with_1p8mm_walls": true,
+      "actual_assembly_status": "R0 historical only; R1 NOT_CHECKED"
+    },
+    "R1_recommended_study": {
+      "bounding_box_volume_cm3": 159.12,
+      "box_area_m2_before_rounding": 0.020456000000000002,
+      "estimated_average_rise_C": 27.775802609592205,
+      "load_W_at_contact_target": 0.7488532480000001,
+      "thermal_screening": "FAIL",
+      "old_70mm_carrier_fits_inner_width_with_1p8mm_walls": false,
+      "actual_assembly_status": "R0 historical only; R1 NOT_CHECKED"
+    },
+    "R1_compact_conditional": {
+      "bounding_box_volume_cm3": 85.53599999999999,
+      "box_area_m2_before_rounding": 0.013319999999999997,
+      "estimated_average_rise_C": 42.65629265629266,
+      "load_W_at_contact_target": 0.4876185599999999,
+      "thermal_screening": "FAIL",
+      "old_70mm_carrier_fits_inner_width_with_1p8mm_walls": false,
+      "actual_assembly_status": "R0 historical only; R1 NOT_CHECKED"
+    }
+  },
+  "display_frame_bytes": 134400,
+  "display_10fps_payload_Mbps": 10.752,
+  "display_15fps_payload_Mbps": 16.128,
+  "display_assumed_effective_bus_Mbps": 14.399999999999999,
+  "coarse_stack_without_camera_mm": 25.5,
+  "new_estimated_peak_battery_A": 2.5846702317290555,
+  "8h_schedule_energy_Wh_at_0p35W_idle": 4.325,
+  "8h_schedule_energy_Wh_at_1W_idle": 9.2,
+  "cost_allocation_total_CNY_NOT_QUOTE": 500,
+  "release": "BLOCKED: platform, thermal, assembly, quotes, electrical and hardware validation OPEN"
+}

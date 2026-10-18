@@ -1,0 +1,37 @@
+Reference,Value,Footprint,Status,Review
+U10,UNVERIFIED BQ24074 + boost + rails + gating,,DRAFT_NOT_FOR_PURCHASE,"BLOCKER: power design, USB-C CC detection, thermistor and hard gates not implemented"
+J2,BATTERY 1S,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,DRAFT_NOT_FOR_PURCHASE,Provisional 2.54mm engineering header; NOT approved battery connector
+J3,REGULATED 5V IN,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,DRAFT_NOT_FOR_PURCHASE,Provisional 2.54mm engineering header; NOT approved battery connector
+J4,CELL NTC,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,DRAFT_NOT_FOR_PURCHASE,Provisional 2.54mm engineering header; NOT approved battery connector
+J1,Zero 2 W GPIO via short harness,Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical,DRAFT_NOT_FOR_PURCHASE,GPIO physical numbering; harness length and final connector height TBD; not direct stacked HAT
+U1,ICE40UP5K-SG48ITR,Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+Y1,UNVERIFIED 12.288MHz XO,,DRAFT_NOT_FOR_PURCHASE,"BLOCKER: order code, jitter, supply and footprint not verified"
+R1,100R PLL filter provisional,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C1,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C2,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C3,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C4,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+R2,10k,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+R3,10k,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+MK1,IM69D130,Sensor_Audio:Infineon_PG-LLGA-5-1,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C5,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+MK2,IM69D130,Sensor_Audio:Infineon_PG-LLGA-5-1,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C6,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+MK3,IM69D130,Sensor_Audio:Infineon_PG-LLGA-5-1,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C7,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+MK4,IM69D130,Sensor_Audio:Infineon_PG-LLGA-5-1,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+C8,100nF 10V,Capacitor_SMD:C_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+A2,Camera Module 3 Standard external FPC,,DRAFT_NOT_FOR_PURCHASE,External Zero CSI connection; not routed on carrier. Hard power isolation/interposer unresolved
+A3,Zero 2 W onboard Wi-Fi BLE,,DRAFT_NOT_FOR_PURCHASE,Already inside Zero; no second purchased module
+SW1,REC_BUTTON,Button_Switch_SMD:SW_SPST_TL3342,DRAFT_NOT_FOR_PURCHASE,Switch MPN/force/travel not supplier-verified
+SW2,CAM_BUTTON,Button_Switch_SMD:SW_SPST_TL3342,DRAFT_NOT_FOR_PURCHASE,Switch MPN/force/travel not supplier-verified
+SW3,ZOOM_PLUS,Button_Switch_SMD:SW_SPST_TL3342,DRAFT_NOT_FOR_PURCHASE,Switch MPN/force/travel not supplier-verified
+SW4,ZOOM_MINUS,Button_Switch_SMD:SW_SPST_TL3342,DRAFT_NOT_FOR_PURCHASE,Switch MPN/force/travel not supplier-verified
+D1,RED MIC POWER,LED_SMD:LED_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,"Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+R4,1k provisional,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+D2,AMBER CAMERA POWER,LED_SMD:LED_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,"Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+R5,1k provisional,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+D3,BLUE UPLOAD,LED_SMD:LED_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,"Color/current MPN TBD; REC/CAM driven by hardware sensed rail, not software"
+R6,1k provisional,Resistor_SMD:R_0603_1608Metric,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending
+SW5,UNVERIFIED dual-pole consent switch + gates,,DRAFT_NOT_FOR_PURCHASE,BLOCKER: independent physical camera/microphone enable + anti-backfeed design incomplete
+J5,UART 3V3 debug,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,DRAFT_NOT_FOR_PURCHASE,Library geometry; manufacturer pin review pending

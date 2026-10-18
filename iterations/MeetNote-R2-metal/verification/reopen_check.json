@@ -1,0 +1,15 @@
+{
+  "native_document_reopened": true,
+  "native_object_count": 240,
+  "final_objects": 60,
+  "final_shape_validity": true,
+  "STEP_reimport_valid": true,
+  "STEP_solids": 60,
+  "STEP_bbox_mm": [
+    76.4,
+    108.0,
+    34.0
+  ],
+  "R2_PCB_from_KiCad": false,
+  "hardware_tested": false
+}

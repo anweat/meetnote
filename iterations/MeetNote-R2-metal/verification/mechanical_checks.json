@@ -1,0 +1,53 @@
+{
+  "version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "parts": 60,
+  "all_final_solids_valid": true,
+  "positive_volume_intersections": [],
+  "RF_zone_metal_conflicts": [],
+  "mass_modeled_shell_seals_fasteners_g": {
+    "MetalMic1": 45.93,
+    "RearCompressionGasket": 0.13,
+    "Boss0": 0.36,
+    "Screw0": 0.14,
+    "Boss1": 0.36,
+    "Screw1": 0.14,
+    "Boss2": 0.16,
+    "Screw2": 0.14,
+    "Boss3": 0.16,
+    "Screw3": 0.14,
+    "RearHeadPocket3": 11.25,
+    "RFCapWithStrapLugs": 11.69,
+    "TopCapBond": 0.01,
+    "PCBPost0": 0.16,
+    "PCBPost1": 0.16,
+    "PCBPost2": 0.16,
+    "PCBPost3": 0.16,
+    "DisplayCoverGlass": 2.39,
+    "DisplayPerimeterTape": 0.07,
+    "CameraCoverGlass": 0.33,
+    "CameraBondRing": 0.01,
+    "SideButton0": 0.09,
+    "SideButton1": 0.09
+  },
+  "modeled_partial_mass_g": 74.23,
+  "nominal_body_mm": [
+    76,
+    104,
+    34
+  ],
+  "external_strap_lug_total_height_mm": 108,
+  "battery_swelling_to_PCB_mm": 0.9000000000000004,
+  "battery_to_display_mm": 0.7000000000000002,
+  "manufacturing_status": "BLOCKED - packaging study, no R2 ECAD integration, unknown supplier envelopes/adhesives/RF/thermal",
+  "R0_PCB_imported": true,
+  "R0_PCB_used_as_R2_board": false
+}

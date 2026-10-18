@@ -1,0 +1,2 @@
+YAML parsed; 8 paths; 7 local references resolve.
+Not full OpenAPI semantic validation or a deployed API test.

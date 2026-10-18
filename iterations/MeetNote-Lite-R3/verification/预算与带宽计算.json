@@ -1,0 +1,36 @@
+{
+  "status": "design_estimates_and_local_arithmetic_only",
+  "date": "2026-09-29",
+  "base_target_cny": 296,
+  "independent_low_sum_cny": 245,
+  "independent_high_sum_cny": 403,
+  "headroom_to_300_cny": 4,
+  "target_with_15pct_reserve_cny": 340.4,
+  "battery_variant_target_cny": 336,
+  "fpga9k_variant_target_cny": 341,
+  "audio_48k_2ch_pcm24_bytes_per_second": 288000,
+  "audio_16k_2ch_pcm16_bytes_per_second": 64000,
+  "spi_12mhz_50pct_payload_bytes_per_second": 750000.0,
+  "fifo_8KiB_raw48k_ms": 28.444444444444446,
+  "fifo_8KiB_16k_ms": 128.0,
+  "two_hours_pcm48k_24bit_GB": 2.0736,
+  "two_hours_pcm16k_16bit_GB": 0.4608,
+  "two_hours_opus64kbps_MB": 57.6,
+  "two_hours_photos_120x2MB_MB": 240,
+  "battery_2000mAh_3V7_85pct_eff_80pct_usable_Wh": 5.032,
+  "runtime_at_2W_hours": 2.516,
+  "runtime_at_2W5_hours": 2.0128,
+  "power_assumption_average_W": [
+    1.5,
+    2.5
+  ],
+  "power_assumption_peak_W": 4,
+  "not_run": [
+    "FPGA synthesis and timing",
+    "Linux cross compilation",
+    "camera/audio/Wi-Fi hardware test",
+    "CAD interference",
+    "ERC/DRC",
+    "thermal measurement"
+  ]
+}

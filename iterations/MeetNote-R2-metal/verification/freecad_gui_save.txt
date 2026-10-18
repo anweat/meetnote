@@ -1,0 +1,1 @@
+Native FreeCAD opened and saved with only final assembly parts visible.

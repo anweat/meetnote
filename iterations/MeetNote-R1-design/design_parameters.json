@@ -1,0 +1,10 @@
+{
+  "revision": "R1-design-study", "evidence": "assumptions, not measurements",
+  "battery": {"voltage_V": 3.7, "capacity_mAh": 2500, "age_factor": 0.8, "conversion_efficiency": 0.88, "reserve_factor": 0.9},
+  "modes_W": {"R0_recording": 2.45, "R1_meeting": 2.6, "active_preview_assistant": 3.4, "optimized_recording_target": 1.2},
+  "envelopes_mm": {"R0": [82,118,29], "R1_recommended_study": [68,90,26], "R1_compact_conditional": [54,72,22]},
+  "thermal": {"effective_area_fraction": 0.65, "h_W_m2K": 8, "ambient_C": 35, "contact_target_C": 43},
+  "display": {"width_px":240, "height_px":280, "bits_per_pixel":16, "spi_MHz_assumption":24, "bus_efficiency_assumption":0.6, "preview_fps_target":10},
+  "budget_allocations_CNY_NOT_QUOTES": {"compute_radio":70,"camera":45,"audio_frontend":25,"FPGA_increment":35,"storage":20,"power":30,"battery":25,"screen":30,"speaker_haptic":12,"PCB_SMT":45,"enclosure":30,"misc_assembly":13,"contingency":120},
+  "fabrication_release": false
+}

@@ -1,0 +1,10 @@
+{
+  "html_local_missing_links": [],
+  "csv_target_sum": 296.0,
+  "csv_rows": 10,
+  "browser_preview": "not_run_file_protocol_blocked_by_browser_security_policy",
+  "hardware_validation": "not_run",
+  "javascript_syntax": "node --check passed",
+  "r2_manifest_files_checked": 94,
+  "r2_manifest_mismatches": []
+}

@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "MeetNote") (type "KiCad") (uri "${KIPRJMOD}/MeetNote.kicad_sym") (options "") (descr "Self contained R0 library")))

@@ -1,0 +1,128 @@
+[
+  {
+    "check": "erc",
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--exit-code-violations",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/verification/erc.json",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_sch"
+    ],
+    "return_code": 5
+  },
+  {
+    "check": "drc",
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--schematic-parity",
+      "--exit-code-violations",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/verification/drc.json",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_pcb"
+    ],
+    "return_code": 5
+  },
+  {
+    "check": "schematic_pdf",
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/schematic.pdf",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_sch"
+    ],
+    "return_code": 0
+  },
+  {
+    "check": "bom_native",
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "bom",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/BOM_native.csv",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_sch"
+    ],
+    "return_code": 0
+  },
+  {
+    "check": "gerber",
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "-l",
+      "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/NOT_FOR_FAB/",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_pcb"
+    ],
+    "return_code": 0
+  },
+  {
+    "check": "drill",
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--format",
+      "excellon",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--generate-report",
+      "--report-path",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/NOT_FOR_FAB/drill_report.txt",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/NOT_FOR_FAB/",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_pcb"
+    ],
+    "return_code": 0
+  },
+  {
+    "check": "positions",
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/NOT_FOR_FAB/placement.csv",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_pcb"
+    ],
+    "return_code": 0
+  },
+  {
+    "check": "pcb_step",
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "step",
+      "--force",
+      "--board-only",
+      "--user-origin",
+      "0x0mm",
+      "-o",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/mechanical/carrier_from_kicad.step",
+      "/Users/anweat/Documents/Codex/2026-09-29/markdown-wi-fi-2-1-soc/outputs/MeetNote-R0/electronics/MeetNote.kicad_pcb"
+    ],
+    "return_code": 0
+  }
+]

@@ -1,0 +1,11 @@
+﻿分项,候选或占位,目标_CNY,低估_CNY,高估_CNY,证据状态,来源
+Linux 主控板,Luckfox Pico Mini A / RV1103,60,55,70,官方系列起价 ¥54.54；具体配置到手价未锁定,https://www.luckfox.cn/Luckfox-Pico-Mini
+FPGA 开发板,Tang Nano 1K / GW1NZ-LV1,45,35,60,型号资源已核查；价格为采购目标，未获报价,https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-1K/Nano-1k.html
+摄像头与 FFC,SC3336 3MP Camera (B),60,55,75,官方海外单件 $8.99；人民币为预算假设，未作汇率报价,https://www.waveshare.com/sc3336-3mp-camera-b.htm
+双麦克风,2 路数字 MEMS 模组，料号待定,25,20,40,占位；需核实正品料号、时钟、噪声与电平,
+Wi-Fi 与 OTG,USB Wi-Fi 模组及转接，料号待定,25,20,35,占位；天线计入，SDK 驱动与 USB ID 尚未验证,https://github.com/LuckfoxTECH/luckfox-pico/issues/156
+TF 卡,32 GB 品牌卡，型号待定,20,15,25,占位；板上卡座已包含，外壳开口不另买延长线,
+控制与状态,录制/拍照按键、录制灯、硬件禁用开关及小器件,12,10,18,工程估算；录制灯与采集许可联动待设计验证,
+连接与供电附件,线材、排针、洞洞板、散热小片、5 V 转接保护,12,10,20,工程估算；不含新购 USB 电源及电池,
+亚克力外壳,平板激光切割、铜柱、螺钉,22,15,35,加工预算，未取得单件正式报价,
+运费及损耗,多店运费与少量耗材,15,10,25,预算，不覆盖器件返修与第二次打样,
