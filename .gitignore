@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# CAD / 3D 临时与备份文件
+*.FCBak
+*.blend1
+*.blend2
+*.lck
+*.bak
+
+# 打包产物（发布包不入库，避免与源目录重复）
+*.zip
+
+# 本地工具缓存
+.idea/
+.vscode/
