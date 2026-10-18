@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MeetNote · 可挂佩的 AI 会议助手｜产品设计研究</title>
+<meta name="description" content="MeetNote 是一个可挂佩的 AI 记录助手：四轮产品定义、硬件架构、结构/热设计与成本研究。研究原型，不可投板。">
+<meta property="og:title" content="MeetNote · 可挂佩的 AI 会议助手">
+<meta property="og:description" content="四轮产品定义、硬件架构、结构/热设计与成本研究。研究原型，不可投板。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://anweat.github.io/meetnote/assets/r2-front.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --paper:#f3f0e7; --paper2:#e9e5d9; --card:#faf8f1;
+  --ink:#142b31; --muted:#5c6d70; --line:#d3dbd4;
+  --accent:#196b61; --accent-soft:#dfe9e3; --warm:#b4652f;
+  --dark:#0f2226; --dark-line:#2a4247;
+  --radius:18px;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+.eyebrow{font-size:12px;font-weight:750;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0 22px;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.14em;text-decoration:none;color:var(--ink);font-size:15px;white-space:nowrap}
+.brand span{font-weight:500;letter-spacing:.02em;color:var(--muted);margin-left:8px}
+.nav nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.nav nav a{color:var(--ink);text-decoration:none;font-size:14px;opacity:.82}
+.nav nav a:hover{opacity:1;color:var(--accent)}
+.nav .gh{border:1px solid var(--ink);border-radius:30px;padding:7px 15px;opacity:1;font-weight:600}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding:64px 0 56px}
+.hero h1{font-size:clamp(38px,4.6vw,58px);line-height:1.12;letter-spacing:-.035em;font-weight:680;margin:18px 0 22px}
+.lede{font-size:18px;line-height:1.85;color:var(--muted);max-width:560px;margin:0 0 22px}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.04em;color:var(--warm);
+  background:#f0e4d3;border:1px solid #e3d2ba;border-radius:30px;padding:7px 14px;margin:0 0 26px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--warm)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:32px;padding:13px 22px;font-size:14.5px;font-weight:650;
+  border:1px solid var(--ink);color:var(--ink);background:transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:#f7f4ea;border-color:var(--ink)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.tiny{font-size:12.5px;color:var(--muted);margin:0}
+.hero-media{margin:0;background:var(--paper2);border-radius:26px;padding:14px;box-shadow:0 18px 50px rgba(20,43,49,.10)}
+.hero-media img{width:100%;border-radius:16px;aspect-ratio:1/1;object-fit:cover}
+.hero-media figcaption{font-size:12px;color:var(--muted);padding:11px 8px 2px;letter-spacing:.02em}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:74px}
+.stat{background:var(--card);padding:24px 26px}
+.stat b{display:block;font-size:34px;line-height:1.1;letter-spacing:-.03em;font-weight:680;font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:12.5px;color:var(--muted);margin-top:6px}
+
+/* section */
+section.block{padding:6px 0 78px}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:30px}
+.block-head h2{font-size:clamp(26px,3.2vw,38px);line-height:1.2;letter-spacing:-.025em;margin:10px 0 0;font-weight:660}
+.block-head p{max-width:460px;margin:0;color:var(--muted);font-size:14.5px;line-height:1.8}
+
+/* rounds */
+.rounds{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.round{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.round-media{aspect-ratio:16/9;background:var(--paper2);overflow:hidden;border-bottom:1px solid var(--line)}
+.round-media img{width:100%;height:100%;object-fit:cover}
+.round-media.contain img{object-fit:contain;padding:20px;background:#fbfaf4}
+.round-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
+.round-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tag{font-size:11.5px;font-weight:800;letter-spacing:.14em;color:#f7f4ea;background:var(--ink);border-radius:5px;padding:3px 8px}
+.round-top span{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.round h3{font-size:20px;margin:0 0 8px;letter-spacing:-.01em}
+.round p{font-size:14px;line-height:1.75;color:var(--muted);margin:0 0 16px}
+.result{font-size:12.5px;line-height:1.6;border-left:3px solid var(--warm);background:#f3e9db;padding:9px 12px;border-radius:4px;margin-bottom:18px}
+.round a{margin-top:auto;font-size:13.5px;font-weight:650;text-decoration:none}
+.round a:hover{text-decoration:underline}
+
+/* loop */
+.loop{background:var(--dark);color:#eef2ea;border-radius:26px;padding:46px 46px 42px;margin-bottom:78px}
+.loop .eyebrow{color:#9fc6b8}
+.loop h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.02em;margin:12px 0 30px;font-weight:620}
+.flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.flow .step{flex:1 1 130px;background:#152e33;border:1px solid var(--dark-line);border-radius:13px;padding:16px 16px 15px}
+.flow .step b{display:block;font-size:14px;margin-bottom:4px}
+.flow .step span{font-size:12px;color:#a9bbb3;line-height:1.55;display:block}
+.flow .arrow{color:#7fa295;font-size:18px;flex:0 0 auto}
+.loop .note{font-size:12.5px;color:#9fb2aa;margin:22px 0 0}
+
+/* principles */
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.principle{border-top:2px solid var(--accent);padding:18px 2px 6px}
+.principle b{display:block;font-size:15.5px;margin-bottom:7px}
+.principle p{font-size:13.5px;line-height:1.75;color:var(--muted);margin:0}
+.principle span{font-size:11.5px;font-weight:750;letter-spacing:.16em;color:var(--accent);display:block;margin-bottom:9px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;border-top:1px solid var(--line)}
+.metric{display:flex;justify-content:space-between;gap:24px;padding:15px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.metric span{color:var(--muted)}
+.metric b{font-weight:620;text-align:right;font-variant-numeric:tabular-nums}
+
+/* docs */
+.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.doc{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:15px 18px;text-decoration:none;color:var(--ink);font-size:14px;transition:border-color .15s ease,transform .15s ease}
+.doc:hover{border-color:var(--accent);transform:translateY(-1px)}
+.doc span{color:var(--muted);font-size:12px}
+
+/* disclaimer */
+.disclaimer{border:1px solid #ddcdb7;background:#f4ebdd;border-radius:var(--radius);padding:26px 30px;margin-bottom:76px}
+.disclaimer b{color:var(--warm)}
+.disclaimer p{font-size:13.5px;line-height:1.8;color:#6b5b47;margin:0}
+.disclaimer p+p{margin-top:9px}
+
+footer{border-top:1px solid var(--line);padding:34px 0 52px;font-size:13px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot a{color:var(--muted);text-decoration:none;margin-right:18px}
+.foot a:hover{color:var(--accent)}
+.foot .lic{font-size:12px}
+
+@media (max-width:920px){
+  .hero{grid-template-columns:1fr;gap:36px;padding:44px 0 40px}
+  .hero-media{max-width:520px}
+  .stats{grid-template-columns:1fr 1fr}
+  .rounds,.principles,.docs{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr;gap:0}
+  .metric{flex-direction:column;gap:3px}
+  .metric b{text-align:left}
+  .flow .step{flex:1 1 100%}
+  .flow .arrow{transform:rotate(90deg);align-self:center}
+  .nav{align-items:flex-start;flex-direction:column;gap:14px}
+  .nav nav{gap:16px}
+  .loop{padding:32px 26px}
+  .block-head{flex-direction:column;align-items:flex-start;gap:12px}
+  .wrap{padding:0 20px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="nav">
+    <a class="brand" href="./">MEETNOTE <span>/ 可挂佩 AI 助手</span></a>
+    <nav>
+      <a href="#rounds">四轮迭代</a>
+      <a href="#principles">设计原则</a>
+      <a href="#docs">文档</a>
+      <a href="reviews/r1.html">交互原型</a>
+      <a class="gh" href="https://github.com/anweat/meetnote">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Product design research · 2026.09.29</div>
+      <h1>把会议与念头，<br>留给随身助手。</h1>
+      <p class="lede">MeetNote 是一个可挂佩的 AI 记录助手：按住说一句话，抬手拍一张照。本地先可靠保存，联网后再由服务器整理成带证据的回答与候选事项——决定权始终在用户手里。</p>
+      <p class="status">研究原型 · 不可投板 · 0 项实物测试</p>
+      <div class="cta">
+        <a class="btn primary" href="reviews/r1.html">打开 R1 交互原型 →</a>
+        <a class="btn" href="https://github.com/anweat/meetnote">查看 GitHub 仓库</a>
+      </div>
+      <p class="tiny">交互原型纯离线，不含真实录音、相机、AI 推理或电量。</p>
+    </div>
+    <figure class="hero-media">
+      <img src="assets/r2-front.jpg" alt="MeetNote R2 金属壳研究样机正面渲染">
+      <figcaption>R2 金属壳研究样机 · FreeCAD 几何渲染 · 76×104×34 mm · 155–190 g</figcaption>
+    </figure>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><b>04</b><span>轮迭代 R0–R3</span></div>
+    <div class="stat"><b>07</b><span>篇整理后的产品设计文档</span></div>
+    <div class="stat"><b>60</b><span>个 R2 CAD 最终对象</span></div>
+    <div class="stat"><b>0</b><span>项 E2 实物测试</span></div>
+  </div>
+
+  <section class="block" id="rounds">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Iterations</div>
+        <h2>四轮，把形态跟着证据收敛。</h2>
+      </div>
+      <p>每一轮都保留可编辑文件、计算口径和未关闭风险，再决定下一轮是否值得继续。不是一次画出成品。</p>
+    </div>
+    <div class="rounds">
+      <article class="round">
+        <div class="round-media"><img src="assets/r0-overview.jpg" alt="R0 工程概念原型四视图总览"></div>
+        <div class="round-body">
+          <div class="round-top"><span class="tag">R0</span><span>工程概念原型</span></div>
+          <h3>桌面会议记录器</h3>
+          <p>KiCad 四层载板草案、FreeCAD 外壳、BOM、OpenAPI 与 12 项本机测试，建立可编辑的产品与工程基线。</p>
+          <div class="result">BLOCKED / NOT FOR FAB：ERC 3 错 7 警，DRC 4 违规 + 93 未连接。</div>
+          <a href="https://github.com/anweat/meetnote/tree/main/iterations/MeetNote-R0">查看 R0 交付包 →</a>
+        </div>
+      </article>
+
+      <article class="round">
+        <div class="round-media"><img src="assets/r1-cover.jpg" alt="R1 可挂佩 AI 助手交互原型封面"></div>
+        <div class="round-body">
+          <div class="round-top"><span class="tag">R1</span><span>定位转向</span></div>
+          <h3>可挂佩 AI 助手</h3>
+          <p>定位从会议记录器调整为圆润挂佩助手，补上 MVP 三动作、实体交互与离线交互原型。</p>
+          <div class="result">热筛查 FAIL：68×90×26 mm 估算壳温约 62.8 °C，43 °C 目标不成立。</div>
+          <a href="reviews/r1.html">打开交互原型 →</a>
+        </div>
+      </article>
+
+      <article class="round">
+        <div class="round-media"><img src="assets/r2-front.jpg" alt="R2 金属壳研究样机"></div>
+        <div class="round-body">
+          <div class="round-top"><span class="tag">R2</span><span>金属壳体</span></div>
+          <h3>6061 铝壳与局部贴合</h3>
+          <p>60 个最终对象的原生装配、STEP/STL、Blender 场景与单台成本模型，揭示现成模组的真实空间与重量代价。</p>
+          <div class="result">空间可行但偏重：155–190 g；单台 1985–4530 元，尚无正式报价。</div>
+          <a href="reviews/r2.html">查看结构审阅页 →</a>
+        </div>
+      </article>
+
+      <article class="round">
+        <div class="round-media contain"><img src="assets/r3-architecture.svg" alt="R3 Lite 架构示意：双麦经 FPGA 接入 Linux，相机 CSI 直连"></div>
+        <div class="round-body">
+          <div class="round-top"><span class="tag">R3</span><span>低成本路线</span></div>
+          <h3>200–300 元 Lite</h3>
+          <p>Luckfox Pico Mini A + Tang Nano 1K + SC3336 + 双麦 + USB Wi-Fi，用现成模块拼一台可验证的实验机。</p>
+          <div class="result">目标 296 元（区间 245–403）；200 元完整实现目前没有可信采购闭环。</div>
+          <a href="reviews/r3.html">查看预算审阅页 →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="loop">
+    <div class="eyebrow">Product loop</div>
+    <h2>主动发起，本地保存，联网理解，人工确认。</h2>
+    <div class="flow">
+      <div class="step"><b>发起</b><span>按住助理键，或按相机键取景</span></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>采集</b><span>语音 / 照片，物理开关许可</span></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>本地保存</b><span>加密分片、原子落盘、断网续传</span></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>云端理解</b><span>ASR / OCR / 摘要 / 检索</span></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>候选与确认</b><span>带证据的回答，副作用需确认</span></div>
+    </div>
+    <p class="note">断网只影响「理解」，不影响「记录」。设备不是离线大模型终端；上传的音频与照片由服务器处理。</p>
+  </section>
+
+  <section class="block" id="principles">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Design principles</div>
+        <h2>五条不妥协的设计原则。</h2>
+      </div>
+      <p>它们决定了哪些功能首版不做，也决定了每个「完成」必须拿出什么证据。</p>
+    </div>
+    <div class="principles">
+      <div class="principle"><span>01</span><b>同意先于采集，物理开关兜底</b><p>上电默认不录制；独立开关切断麦克风与相机许可，应用卡死也要停；已上传数据需单独撤回。</p></div>
+      <div class="principle"><span>02</span><b>本地成功才算成功</b><p>「已保存」只对应本地原子落盘，不对应云端已理解，错误必须明确显示。</p></div>
+      <div class="principle"><span>03</span><b>候选不等于决定</b><p>摘要、待办、决定都标为候选，能回溯到原始音频区间或照片，确认前不产生副作用。</p></div>
+      <div class="principle"><span>04</span><b>先证明再承诺</b><p>FPGA、43 °C 触温、2 小时续航、300 元成本都有实测门槛，未通过就保持 BLOCKED。</p></div>
+      <div class="principle"><span>05</span><b>研究等级透明</b><p>每条结论标注 E0 估算 / E1 本机验证 / E2 实物测试；本轮 E2 为零。</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Snapshot</div>
+        <h2>当前设计快照。</h2>
+      </div>
+      <p>全部为研究值，不代表产品承诺。完整口径见文档。</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span>形态</span><b>胸前挂佩 / 手持取景 / 桌面会议</b></div>
+      <div class="metric"><span>尺寸演进</span><b>82×118×29 → 68×90×26 → 76×104×34 mm</b></div>
+      <div class="metric"><span>质量</span><b>120–160 g → 65–95 g 目标 → 155–190 g</b></div>
+      <div class="metric"><span>续航（估算）</span><b>2.39 h / 2.25 h / 2.09 h @2500 mAh</b></div>
+      <div class="metric"><span>主方案</span><b>Zero 2 W + iCE40UP5K + 4×PDM + Camera 3</b></div>
+      <div class="metric"><span>低成本方案</span><b>RV1103 + Tang Nano 1K + SC3336 + 双麦</b></div>
+      <div class="metric"><span>成本</span><b>500 元/台分配 · 单台 1985–4530 元 · Lite 296 元</b></div>
+      <div class="metric"><span>验证等级</span><b>E1 本机验证为主，E2 实物测试 0 项</b></div>
+    </div>
+  </section>
+
+  <section class="block" id="docs">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Documents</div>
+        <h2>从产品定义到风险清单。</h2>
+      </div>
+      <p>七篇整理文档 + 四轮原始交付包。文档在 GitHub 上直接阅读，原始证据保留在各轮 verification 目录。</p>
+    </div>
+    <div class="docs">
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/00-%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E6%80%BB%E8%A7%88.md"><b>产品设计总览</b><span>定位 · 形态 · 决策 · 成熟度</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/01-%E9%9C%80%E6%B1%82%E4%B8%8E%E4%BA%A4%E4%BA%92.md"><b>需求与交互</b><span>R01–R11 · MVP · 状态机</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/02-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%BD%AF%E4%BB%B6%E5%8D%8F%E8%AE%AE.md"><b>系统架构与软件协议</b><span>数据通路 · 功耗 · 加密 · API</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84%E4%B8%8E%E7%83%AD%E8%AE%BE%E8%AE%A1.md"><b>机械结构与热设计</b><span>尺寸 · 装配 · 金属壳 · 热</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/04-%E6%88%90%E6%9C%AC%E4%B8%8E%E4%BE%9B%E5%BA%94%E9%93%BE.md"><b>成本与供应链</b><span>三套成本口径 · 采购规则</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/05-%E9%A3%8E%E9%99%A9%E4%B8%8E%E9%AA%8C%E8%AF%81%E8%AE%A1%E5%88%92.md"><b>风险与验证计划</b><span>13 项风险 · 门禁 · 实测顺序</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote/blob/main/docs/06-%E8%BF%AD%E4%BB%A3%E8%AE%B0%E5%BD%95.md"><b>迭代记录</b><span>R0–R3 输入 · 产出 · 遗留</span></a>
+      <a class="doc" href="https://github.com/anweat/meetnote"><b>GitHub 仓库</b><span>README · 原始交付包 · 许可证</span></a>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <p><b>边界与免责声明：</b>本页面展示的是产品设计与工程研究资料，不是可制造产品，也不是采购或投资依据。</p>
+    <p>R0 原理图存在接口占位、PCB 未布线；R1/R2/R3 无实物测试；热、电池脉冲、无线净空与成本均未关闭；所有成本均为未询价的预算。制造导出文件位于 <code>NOT_FOR_FAB</code> 目录，禁止下单。</p>
+  </div>
+
+  <footer>
+    <div class="foot">
+      <div>
+        <a href="https://github.com/anweat/meetnote">GitHub</a>
+        <a href="https://github.com/anweat/meetnote#readme">README</a>
+        <a href="reviews/r1.html">R1 原型</a>
+        <a href="reviews/r2.html">R2 结构</a>
+        <a href="reviews/r3.html">R3 预算</a>
+      </div>
+      <div class="lic">文档 CC BY 4.0 · 代码 MIT · 研究原型，不可投板</div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

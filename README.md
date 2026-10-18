@@ -1,5 +1,7 @@
 # MeetNote · 可挂佩的 AI 会议助手
 
+[中文](README.md) · [English](README.en.md) · [在线主页](https://anweat.github.io/meetnote/)
+
 > 从「桌面会议记录器」到「圆润、可挂佩的 AI 助手」：四轮产品定义、硬件架构、结构/热设计与成本研究。
 
 **状态：工程概念研究 · `BLOCKED / NOT FOR FAB`。**
@@ -7,6 +9,7 @@
 
 [![文档许可证](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0)
 [![代码许可证](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![在线页面](https://img.shields.io/badge/pages-online-196b61.svg)](https://anweat.github.io/meetnote/)
 
 ![MeetNote R2 金属壳研究样机](iterations/MeetNote-R2-metal/visuals/01_front.png)
 
@@ -52,6 +55,7 @@ MeetNote 是一个「随手记录 → 本地可靠保存 → 服务器理解 →
 ```text
 .
 ├── README.md                     # 本文件：项目总览与导航
+├── README.en.md                  # English overview
 ├── docs/                         # 跨轮次整理后的产品设计文档（建议从这里读）
 │   ├── 00-产品设计总览.md          # 定位、用户、形态、闭环、决策与指标
 │   ├── 01-需求与交互.md            # R01–R11 基线、MVP 三动作、状态与反馈
@@ -65,6 +69,8 @@ MeetNote 是一个「随手记录 → 本地可靠保存 → 服务器理解 →
 │   ├── MeetNote-R1-design/
 │   ├── MeetNote-R2-metal/
 │   └── MeetNote-Lite-R3/
+├── site/                         # GitHub Pages 静态站点（首页 + 三个交互审阅页）
+├── .github/workflows/pages.yml   # Pages 自动部署
 ├── LICENSE                       # MIT（脚本与软件）
 └── LICENSE-CC-BY-4.0             # CC BY 4.0（文档、图片、结构与工程资料）
 ```
@@ -79,13 +85,17 @@ MeetNote 是一个「随手记录 → 本地可靠保存 → 服务器理解 →
 - **关心结构与外观**：[机械与热设计](docs/03-机械结构与热设计.md) → R2 的 [设计说明与验证边界](iterations/MeetNote-R2-metal/docs/设计说明与验证边界.md)
 - **关心成本**：[成本与供应链](docs/04-成本与供应链.md)
 
-## 可交互的研究页（纯离线）
+## 在线页面与交互研究
 
-直接双击或用浏览器打开，不需要服务器、不联网、不录音：
+**项目主页**：[anweat.github.io/meetnote](https://anweat.github.io/meetnote/) — 产品总览、四轮迭代、关键数字与文档导航。
 
-- **R1 交互原型**：[`design-review.html`](iterations/MeetNote-R1-design/design-review.html) — 切换「记住 / 看一下 / 回顾 / 会议」模式，查看屏幕示意，切换 68×90×26 与 54×72×22 两档尺寸，调整电池与负载重算续航；键盘可操作。
-- **R2 结构审阅页**：[`review.html`](iterations/MeetNote-R2-metal/review.html) — 金属壳、贴合、爆炸图与成本口径。
-- **R3 Lite 审阅页**：[`review.html`](iterations/MeetNote-Lite-R3/review.html) — 预算、架构与增配对照。
+三个可以直接交互的研究页（纯静态，不联网、不录音、不调用 AI）：
+
+- **R1 交互原型**：[在线打开](https://anweat.github.io/meetnote/reviews/r1.html) · [本地文件](iterations/MeetNote-R1-design/design-review.html) — 切换「记住 / 看一下 / 回顾 / 会议 / 断网」模式，切换 68×90×26 与 54×72×22 两档尺寸，调整电池与负载重算续航；键盘可操作。
+- **R2 结构审阅页**：[在线打开](https://anweat.github.io/meetnote/reviews/r2.html) · [本地文件](iterations/MeetNote-R2-metal/review.html) — 金属壳、贴合、爆炸图与单台成本口径。
+- **R3 Lite 审阅页**：[在线打开](https://anweat.github.io/meetnote/reviews/r3.html) · [本地文件](iterations/MeetNote-Lite-R3/review.html) — 预算、架构、增配试算与验证顺序。
+
+页面由 `site/` 目录构建，通过 GitHub Actions 部署；原始 HTML 与源文件仍保留在 `iterations/` 下。
 
 ## 复现本机计算
 
